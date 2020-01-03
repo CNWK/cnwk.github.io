@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>  
+ <title>MY FIRST WEBSITE!</title>   
+
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <style>
+        body {
+            background-image: url(https://media1.giphy.com/media/xThuWcaa4U4XZQDgvm/giphy.gif);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+        }
+    </style>
+    </head>
+    
+<body>
+    <div class="topnav">
+        <a href="index.html">Home</a>
+        <a href="page2.html">Food</a>
+        <a href="page3.html">Opinions</a>
+    <a href="page4.html">Music And Videos</a>
+    </div>
+<p style="color:hotpink;font-size:30pxs">hello!!How are you doing? this is my first website.I love fortnite!! </p> 
+ <p style="color:red">favorite animal is a dog </p>   
+ <p style="color:blue">my favorite nfl player is julian edelman </p> 
+<p style="color:yellow"> i can type 36 wpm </p>  
+<P style="color:green">   my favorite color is green </P>
+<p>my favoirte video game is fortnite</p>
+    <img src="https://amp.businessinsider.com/images/5ac536ea87826b17008b457d-750-563.jpg" height="236px">
+    <p>My favorite football player is julian edelman</p>
+    <img src="https://newtopinfo.ru/go.php?https://i.ytimg.com/vi/3Dxhysq_k8Y/mqdefault.jpg">
+   
+    <div>
+    <h1>Ninja Clicker</h1>
+        <button onclick="incrementScore()">Click me!</button>
+        <h2 id="score">0</h2>
+    </div>
+    
+    <script>
+    
+        var score =0;
+        const remarks = ["CLICK ME!", "YEAH","FASTER","MORE!"];
+        function incrementScore(){
+            document.getElementsByTagName("button")[0].innerHTML = remarks[Math.floor(Math.random()*remarks.length)];
+            score++;
+            document.getElementById("score").innerHTML = score;
+        }
+    
+    </script>
+    
+    </body>
+
+</html>
