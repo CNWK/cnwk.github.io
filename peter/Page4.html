@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Page 4</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+     <div class="topnav">
+            <button  onclick="location.href='index.html';">Home</button>
+            <button  onclick="location.href='Page2.html';">Food</button>
+            <button  onclick="location.href='Page3.html';">Opinions</button>
+            <button  onclick="location.href='Page4.html';">Videos</button>
+    </div>
+<h1><p>Videos</p></h1>
+        <p>These are some of the videos that I like below</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/Hkz0NcKPzMs" frameborder="1" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/vjxM1U9qMqU?start=28" frameborder="1" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/MEkNYWlXWdA?start=28" frameborder="1" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/mPTCq3LiZSE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+    </iframe>
+    <h2><p>Game!</p></h2>
+    <button onclick="incrementscore()">Click!
+    </button>
+    <h2 id="score">0</h2>
+    <script>
+        var score = 0;
+        const remarks = ["Click me!", "YEAH", "Faster!", "More!"];
+        function incrementscore(){
+            document.getElementsByTagName("button")
+            [0].innerHTML = 
+                remarks[Math.floor(Math.random()*remarks.length)
+                ];
+            score=score+99999999999999999999999999999999999999999999999999999999999999999999999999999999999
+                        score++;
+                        document.getElementById("score").innerHTML = score;
+        }
+    </script>
+    <center><p><embed loop autoplay="autoplay" loop src="Warframe.mp3"></p></center>
+    <button  onclick="location.href='page3.html';">Previous Page</button>
+</body>
+</html>
