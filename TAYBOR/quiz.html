@@ -1,0 +1,134 @@
+<head>
+<link href="style.css" rel="stylesheet"
+      type="text/css">
+</head>
+<body>                                                      
+    <div class="tabs">                                                      
+        <a href="index.html">home</a>                                                       
+        <a href= "food.html">food</a>
+        <a href= "opinions.html">opinions</a>                                                       
+        <a href= "game.html">game</a>                                                       
+        <a href = "quiz.html">quiz</a>      
+        <a href = "media.html">media</a>
+    </div>                                                      
+                                                           
+    <h1>Welcome to my quiz</h1>
+    <p>there are 5 questions try to get them all right!</p>
+    <h3>Question 1</h3>
+    <h4>how many header tags are there</h4>
+    <div>
+        
+        <button onclick="worng(this)">1</button>
+        <button onclick="worng(this)">3</button>
+        <button onclick="worng(this)">4</button>
+        <button onclick="right(this)">6</button>
+        </div>
+    
+         <h3>Question 2</h3>
+    <h4>how many undertale bosses are there</h4>
+    <div>
+        
+        <button onclick="right(this)">7</button>
+        <button onclick="wrong(this)">8</button>
+        <button onclick="worng(this)">11</button>
+        <button onclick="wrong(this)">15</button>
+        </div>
+         <h3>Question 3</h3>
+    <h4>what is my favorite book</h4>
+    <div>
+    
+        <button onclick="worng(this)">pete the cat</button>
+        <button onclick="worng(this)">harry potter</button>
+        <button onclick="right(this)">gregor the overlander</button>
+        <button onclick="wrong(this)">pumkins story</button>
+        </div>
+    
+             <h3>Question 4</h3>
+    <h4>who was my favorite reading teacher</h4>
+    <div>
+        
+        <button onclick="worng(this)">mrs.valerie</button>
+        <button onclick="worng(this)">mrs.reddit</button>
+        <button onclick="right(this)">mrs.jones</button>
+        <button onclick="wrong(this)">mrs.freelands</button>
+        </div>
+                <h3>Question 5</h3>
+    <h4>what is my favorite kind of ball</h4>
+    <div>
+        
+        <button onclick="worng(this)">volley ball</button>
+        <button onclick="right(this)">tennis ball</button>
+        <button onclick="wrong(this)">dodge ball</button>
+        <button onclick="wrong(this)">football</button>
+        </div>
+            <h3>Question 6</h3>
+    <h4>how many texas good friends do i have</h4>
+    <div>
+        
+        <button onclick="right(this)">5</button>
+        <button onclick="worng(this)">8</button>
+        <button onclick="wrong(this)">10</button>
+        <button onclick="wrong(this)">alot</button>
+        </div>
+                <h3>Question 7</h3>
+    <h4>how many years was i in soccer</h4>
+    <div>
+        
+        <button onclick="worng(this)">1</button>
+        <button onclick="right(this)">2</button>
+        <button onclick="wrong(this)">3</button>
+        <button onclick="wrong(this)">4</button>
+        </div>
+                <h3>Question 8</h3>
+    <h4>what elementry school am i in</h4>
+    <div>
+        
+        <button onclick="worng(this)">sabertooth elementry</button>
+        <button onclick="worng(this)">cambell elementry</button>
+        <button onclick="wrong(this)">kilpatrick elementry</button>
+        <button onclick="right(this)">randolph elementry</button>
+        </div>
+                <h3>Question 9</h3>
+    <h4>how many ok freinds to i have<h4>
+    <div>
+        
+        <button onclick="worng(this)">5</button>
+        <button onclick="worng(this)">8</button>
+        <button onclick="wrong(this)">10</button>
+        <button onclick="right(this)">alot</button>
+        </div>
+                <h3>Question 10</h3>
+    <h4>what is my favorite color</h4>
+    <div>
+        
+        <button onclick="right(this)">yellow</button>
+        <button onclick="worng(this)">all kinds of blue</button>
+        <button onclick="wrong(this)">orange</button>
+        <button onclick="wrong(this)">green</button>
+        </div>
+                <h3>Question 11</h3>
+    <h4>what is my least favorite color</h4>
+    <div>
+        
+        <button onclick="worng(this)">yellow</button>
+        <button onclick="right(this)">all kinds of blue</button>
+        <button onclick="wrong(this)">orange</button>
+        <button onclick="wrong(this)">green</button>
+        </div>
+        
+        <h1 id="quizScore">score: 0</h1>
+  <script>   
+    var totalCorrect = 0;
+      var totalWrong = 0;
+    function right(elem){
+                    elem.style.backgroundColor = "green";
+                    totalCorrect+=1;
+                    document.getElementById("quizScore").innerHTML = + (totalCorrect - totalWrong);
+                    }
+            function wrong(elem){
+                    elem.style.backgroundColor = "red";
+                    totalWrong+=1;
+                    document.getElementById("quizScore").innerHTML = + (totalCorrect - totalWrong);
+                    }
+    </script>
+</body>
