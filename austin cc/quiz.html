@@ -1,0 +1,108 @@
+  <head><link href="style.css" rel="stylesheet"
+        type="text/css"></head>
+<body>
+<div class="tabs">
+        <a href="index.html">home</a>
+    <a href="food.html">food</a>
+        <a href="opinions.html">opinions</a>
+        <a href="game.html">game</a>
+        <a href="quiz.html">quiz</a>
+    <a href="media.html">media</a>
+    </div>
+<h1>welcome to quiz game</h1>
+<p>There are many questions try to get them all correct</p>
+    <h3>question 1</h3>
+    <h4>how many headers are there?</h4>
+    <div>
+        <button onclick="wrong(this)">3</button>
+         <button onclick="wrong(this)">4</button>
+         <button onclick="wrong(this)">0</button>
+         <button onclick="wrong(this)">9</button>
+         <button onclick="right(this)">6</button>
+    </div>
+    <h3>question 2</h3>
+    <h4>what is my favorite number?</h4>
+    <div>
+        <button onclick="wrong(this)">3</button>
+         <button onclick="wrong(this)">4</button>
+         <button onclick="right(this)">7</button>
+         <button onclick="wrong(this)">9</button>
+         <button onclick="wrong(this)">6</button>
+    </div>
+        <h3>question 4</h3>
+    <h4>does pineapple go on pizza?</h4>
+    <div>
+        <button onclick="right(this)">no</button>
+         <button onclick="wrong(this)">yes</button>
+    </div>
+        <h3>question 9</h3>
+    <h4>what question is it?</h4>
+    <div>
+        <button onclick="wrong(this)">3</button>
+         <button onclick="wrong(this)">4</button>
+         <button onclick="right(this)">9</button>
+         <button onclick="wrong(this)">6</button>
+        <button onclick="wrong(this)">what?</button>
+    </div>
+        <h3>question 5</h3>
+    <h4>true or false?</h4>
+    <div>
+        <button onclick="wrong(this)">right</button>
+        <button onclick="right(this)">wrong</button>
+    </div>
+        
+        <h3>question 12</h3>
+    <h4>do i have a pet?</h4>
+    <div>
+        <button onclick="right(this)">yes</button>
+         <button onclick="wrong(this)">no</button>
+         <button onclick="wrong(this)">bird</button>
+         <button onclick="wrong(this)">fish</button>
+         <button onclick="right(this)">dog</button>
+    </div>
+        <h3>question 6</h3>
+    <h4>favorite color?</h4>
+    <div>
+        <button onclick="wrong(this)">3</button>
+         <button onclick="wrong(this)">4</button>
+         <button onclick="wrong(this)">0</button>
+         <button onclick="wrong(this)">9</button>
+         <button onclick="right(this)">6</button>
+    </div>
+        <h3>question 8</h3>
+    <h4>what is 10-10 in blue?</h4>
+    <div>
+        <button onclick="wrong(this)">2</button>
+         <button onclick="wrong(this)">4</button>
+         <button onclick="wrong(this)">0</button>
+         <button onclick="right(this)">no</button>
+         <button onclick="wrong(this)">red</button>
+    </div>
+        <h3>question 10</h3>
+    <h4>what is the logo?</h4>
+    <div>
+        <button onclick="wrong(this)">pirate</button>
+         <button onclick="wrong(this)">lumberjack</button>
+         <button onclick="wrong(this)">fish</button>
+         <button onclick="wrong(this)">cat</button>
+         <button onclick="right(this)">ninja</button>
+    </div>
+        <h1 id="quizScore">Score: 0</h1>
+
+    <script>
+        var totalCorrect = 0;
+        var totalWrong = 0;
+            function right(elem){
+                elem.style.backgroundColor = "green";
+                totalCorrect += 1;
+                document.getElementById("quizScore").innerHTML = "Score: " + (totalCorrect-totalWrong);
+            }
+        
+            function wrong(elem){
+                elem.style.backgroundColor = "red";
+                totalWrong += 1;
+                document.getElementById("quizScore").innerHTML = "Score: " + (totalCorrect-totalWrong); 
+            }
+        
+            </script>
+</body>
