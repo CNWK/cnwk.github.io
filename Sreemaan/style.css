@@ -1,0 +1,66 @@
+    p {
+        color: hotpink;
+    }
+    body {
+        background-color: aqua;
+        background-image:url(https://eveteransday.com/wp-content/uploads/2018/11/new-year-gorilla-funny-meme.png);
+        
+    }
+    a {
+      color: red
+          
+    }
+.tabs a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center:
+    padding: 14px 16px;
+    text-decoration: none:
+    font-size: 17px;
+}
+.tabs a:hover {
+    background-color: #ddd;
+    color: black;
+}
+.tabs a:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.tabs {
+    overflow: hidden;
+    background-color:  #333;
+}
+
+table {
+    font-family: monospace;
+    border-collapse: collapse;
+    width: 100%;
+}
+td, th {
+     border: 1px solid #dddddd;
+     text-align: left;
+     padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: aqua
+}
+        tr:nth-child(odd) {
+    background-color: hotpink
+    }
+th {
+    font-size: 500px;
+    font-style:oblique;
+    text-shadow: 500px 500px #cccccc;    
+}
+button.clicker{
+    width:1000px;
+    height:800px;
+    background-color:aqua;
+    color: hotpink;
+    font-size: 10em
+    font-family: cursive; 
+}
+.game {text-align: center;
+}

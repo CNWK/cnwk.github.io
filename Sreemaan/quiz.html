@@ -1,0 +1,78 @@
+<head>
+<link href="style.css" rel="stylesheet"
+      type="text/css">
+    <title>Quiz Game</title>
+</head>
+<body> 
+<div class = "tabs">
+    <a href="index.html">Home</a>
+     <a href="food.html">Food</a>
+     <a href="opinions.html">Opinions</a>
+     <a href="game.html">Game</a>
+    <a href="quiz.html">Quiz</a>
+    <a href="media.html">Media</a>
+</div>
+    <h1>Welcome to my quiz</h1>
+    <p>There are 5 questions. Try to get them all right!</p>
+    <h3>question 1</h3>
+    <h4>How many header tags are there?</h4>
+    <div>
+        <button onclick="wrong(this)">10</button>
+          <button onclick="wrong(this)">13</button>
+          <button onclick="wrong(this)">11</button>
+            <button onclick="right(this)">6</button>
+              
+    </div>
+    
+    <h3>question 2</h3>
+    <h4>who is the best wide reciver? </h4>
+    <div>
+        <button onclick="right(this)">10</button>
+          <button onclick="wrong(this)">13</button>
+          <button onclick="wrong(this)">11</button>
+            <button onclick="wrong(this)">86</button>
+    </div>
+        <h3>question 3</h3>
+    <h4>how many touchdowns do I have? </h4>
+    <div>
+        <button onclick="wrong(this)">10</button>
+          <button onclick="right(this)">13</button>
+          <button onclick="wrong(this)">11</button>
+            <button onclick="wrong(this)">86</button>
+        
+        </div>
+    
+            <h3>question 4</h3>
+    <h4>whats my age </h4>
+    <div>
+        <button onclick="wrong(this)">10</button>
+          <button onclick="wrong(this)">13</button>
+          <button onclick="right(this)">11</button>
+            <button onclick="wrong(this)">86</button>
+        </div>
+                <h3>question 5</h3>
+    <h4>what is my friends faorite number? </h4>
+    <div>
+        <button onclick="wrong(this)">10</button>
+          <button onclick="right(this)">13</button>
+          <button onclick="wrong(this)">11</button>
+            <button onclick="wrong(this)">86</button>
+        </div>
+    <h1 id="quizScore">Score: 0</h1>
+
+    <script>
+          var totalCorrect = 0;
+          var totalWrong = 0;
+          function right(elem){
+              elem.style.backgroundColor = "green";
+              totalCorrect+=1;
+              document.getElementById("quizScore").innerHTML = "Score: " + (totalCorrect- totalWrong);
+          }
+        function wrong(elem){
+              elem.style.backgroundColor = "red";
+              totalWrong+=1;
+            document.getElementById("quizScore").innerHTML = "Score: " + (totalCorrect- totalWrong);
+        }
+    
+    </script>
+</body>    

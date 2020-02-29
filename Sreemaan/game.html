@@ -1,0 +1,40 @@
+<head>
+<link href="style.css" rel="stylesheet"
+      type="text/css">
+</head>
+<body>
+    
+<div class = "tabs">
+    <a href="index.html">Home</a>
+     <a href="food.html">Food</a>
+     <a href="opinions.html">Opinions</a>
+     <a href="game.html">Game</a>
+     <a href="quiz.html">Quiz</a>
+</div>
+         
+ <div class="game">
+     <h1>Ninja clicker</h1>
+     <button class="clicker" onclick="incrementClicks()">CLICK ME!</button>
+     <h1 id="clickLabel">Clicked: 0 times</h1>
+
+
+     <h1>Anticheat clicker</h1>
+     <button class="clicker" id="anticheat" onclick="incrementClicks2()">No cheating!</button>
+     <h1 id="clickLabel2">Clicked: 0 times</h1>
+ </div>
+    <script>
+    
+    var clicks = 0;
+      function incrementClicks(){
+          clicks += 1;
+           document.getElementById("clickLabel").innerHTML = "Clicked: " + clicks + " times";
+      }
+        
+      var clicks2 = 0;
+      function incrementClicks2(){
+          clicks2 += 1;
+           document.getElementById("clickLabel2").innerHTML = "Clicked: " + clicks2 + " times";
+           document.getElementById("anticheat").blur();
+      }
+    </script>
+</body>
