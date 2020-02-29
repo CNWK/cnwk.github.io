@@ -1,0 +1,44 @@
+ <head>
+<link href="Style.css" rel="stylesheet"
+      type="text/css"> 
+     <title>Clicker</title>
+</head>
+<body>
+<div class="tabs">
+     <a href="index.html"  >Home</a>
+    <a href  = "Food.html">Food</a>
+        <a href="Opinions.html">Opinions</a>
+    <a href='game.html'  >Game</a>
+    <a href='quiz.html'  >Quiz</a>
+    <a href="media.html">Videos</a>
+</div>
+    <div class="Game"> 
+    <h1>Fast Kliker</h1>
+    <button class="clicker" onclick="incrementClicks()">Click For 10 Pokeballs</button>
+    <h1 id="clickLabel">Clicked 0 times</h1>
+        
+    <h1>Anti-Cheat Clicker</h1>
+    <button class="clicker"id="AntiCheat" onclick="incrementClicks2()">If you Cheat you will turn into a Magikarp</button>
+    <h1 id="clickLabel2">Clicked 0 times</h1>
+        
+
+    </div>
+    <script>
+    var clicks = 0;
+        function incrementClicks(){
+    clicks += 1;
+            document.getElementById("clickLabel").innerHTML ="Clicked: " + clicks + " times";
+            
+    }
+        
+            var clicks2 = 0;
+        function incrementClicks2(){
+    clicks2 += 1;
+            document.getElementById("clickLabel2").innerHTML ="Clicked: " + clicks2 + " times";
+            document.getElementById("AntiCheat").blur();
+            
+    }
+        </script>
+
+</body>
+

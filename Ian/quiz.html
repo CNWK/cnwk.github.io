@@ -1,0 +1,149 @@
+<head>
+<link href="Style.css" rel="stylesheet"
+      type="text/css">
+    
+</head>
+<body>
+    <div class="tabs">
+     <a href="index.html"  >Home</a>
+    <a href  = "Food.html">Food</a>
+        <a href="Opinions.html">Opinions</a>
+        <a href='game.html'  >Game</a>
+        <a href='quiz.html'  >Quiz</a>
+        <a href="media.html">Videos</a>
+    </div>
+    
+    <h1>Welcome to the Epic Gaming Quiz</h1>
+<p>There are 20 questions.Get Them All </p>
+    <h3>Question 1</h3>
+    <h4>How Many Pokemon Are In Gen 1?</h4>
+    <div>
+    <button onclick="wrong(this)">100</button>
+    <button onclick="wrong(this)">101</button>
+    <button onclick="right(this)">151</button>
+    <button onclick="wrong(this)">265</button>
+        </div>
+    
+       <h3>Question 2</h3>
+    <h4>Which Pokemon Can Learn Transform?</h4>
+    <div>
+    <button onclick="wrong(this)">Arceus and Dragonite</button>
+    <button onclick="right(this)">Mew and Ditto</button>
+    <button onclick="wrong(this)">Ditto and Arceus</button>
+    <button onclick="wrong(this)">Mew and Arceus</button>
+        </div>
+    
+           <h3>Question 3</h3>
+    <h4>What Are The 2 Legendary Pokemon In Sun and Moon?</h4>
+    <div>
+    <button onclick="wrong(this)">Lucario and Melmetal</button>
+    <button onclick="wrong (this)">Tapu Koko and Ditto</button>
+    <button onclick="wrong(this)">Cosmog and Rotom</button>
+    <button onclick="right(this)">Solageo and Lunala</button>
+        </div>
+    
+        <h3>Question 4</h3>
+    <h4>What 2 Pokemon Can Fuse With Other Pokemon?</h4>
+    <div>
+    <button onclick="right(this)">Kyreum and Necrozma</button>
+    <button onclick="wrong(this)">Dragonite and Solageo</button>
+    <button onclick="wrong(this)">Lunala and Dragonite</button>
+    <button onclick="wrong(this)">It is Not Possible</button>
+        </div>
+    
+        <h3>Question 5</h3>
+    <h4>What Pokemon Was Created?</h4>
+    <div>
+    <button onclick="wrong(this)">Ditto</button>
+    <button onclick="wrong(this)">Mew</button>
+    <button onclick="right(this)">Mewtwo</button>
+    <button onclick="wrong(this)">Arceus</button>
+        </div>
+    
+    <h3>Question 6</h3>
+    <h4>What Pokemon Doesn't Evolve Without a Evolution Stone?</h4>
+    <div>
+    <button onclick="wrong(this)">Pikachu</button>
+    <button onclick="right(this)">Magmar</button>
+    <button onclick="wrong(this)">Haunter</button>
+    <button onclick="wrong(this)">Groundon</button>
+        </div>
+    
+        <h3>Question 7</h3>
+    <h4>Dragonite Cannot Learn Which Move?</h4>
+    <div>
+    <button onclick="right(this)">Psychic</button>
+    <button onclick="wrong(this)">Oblivion Wing</button>
+    <button onclick="wrong(this)">Ice Beam</button>
+    <button onclick="wrong(this)">Rock Throw</button>
+        </div>
+        <h3>Question 8</h3>
+    <h4>What Pokemon Is In Lets Go Eevee and Pikachu?</h4>
+    <div>
+    <button onclick="wrong(this)">None of the Below</button>
+    <button onclick="wrong(this)">Lucario</button>
+    <button onclick="wrong(this)">Celibi</button>
+    <button onclick="right(this)">Mew</button>
+        </div>
+        <h3>Question 9</h3>
+    <h4>Which Of These Pokemon Are On Ash's Team?</h4>
+    <div>
+    <button onclick="wrong(this)">Blastoise</button>
+    <button onclick="wrong(this)">Talonflame</button>
+    <button onclick="wrong(this)">Onix</button>
+    <button onclick="right(this)">Greninja</button>
+        </div>
+        <h3>Question 10</h3>
+    <h4>What Pokemon Did Ash Let Free?</h4>
+    <div>
+    <button onclick="wrong(this)">Snorlax</button>
+    <button onclick="right(this)">Charizard</button>
+    <button onclick="wrong(this)">Butterfree</button>
+    <button onclick="wrong(this)">Dratini</button>
+        </div>
+    
+            <h3>Question 11</h3>
+    <h4>Who Is The First Gym Leader?</h4>
+    <div>
+    <button onclick="wrong(this)">Lorilea</button>
+    <button onclick="wrong(this)">Koga</button>
+    <button onclick="right(this)">Brock</button>
+    <button onclick="wrong(this)">Blue</button>
+        </div>
+    
+            <h3>Question 12</h3>
+    <h4>Who Is The Leader Of The Elite 4?</h4>
+    <div>
+    <button onclick="wrong(this)">Your Rival</button>
+    <button onclick="wrong(this)">Bruce</button>
+    <button onclick="right(this)">Lance</button>
+    <button onclick="wrong(this)">Nobody Is The Leader</button>
+        </div>
+            <h3>Question 13</h3>
+    <h4>What Pokemon Does Ash Encounter?</h4>
+    <div>
+    <button onclick="wrong(this)">Snorlax</button>
+    <button onclick="right(this)">Charizard</button>
+    <button onclick="wrong(this)">Butterfree</button>
+    <button onclick="wrong(this)">Dratini</button>
+        </div>
+    <h1 id="quizScore">Score : 0</h1>
+
+    <script>
+        var totalWrong = 0;
+    var totalCorrect = 0;
+    function right(elm){
+ elm.style.backgroundColor = " green";
+        totalCorrect+=1;
+        
+        document.getElementById("quizScore").innerHTML = "Score: " + (totalCorrect - totalWrong);
+    }
+    function wrong(elm){
+ elm.style.backgroundColor = " red";
+        totalWrong+=1;
+        document.getElementById("quizScore").innerHTML = "Score: " + (totalCorrect - totalWrong);
+    }
+    </script>
+    
+</body>
+
