@@ -1,0 +1,78 @@
+<head>
+<link href="style.css" rel="stylesheet"
+      type="text/css">
+           <title>Quiz</title>
+</head>
+<body>
+<div class="tabs">
+    <a href="index.html">Home</a>
+     <a href="food.html">Food</a>
+        <a href="opinions.html">Opinions</a>
+    <a href="Game.html">Game</a>
+    <a href="Quiz.html">Quiz</a>
+    <a href="media.html">Video</a>
+</div>
+<h1>The Quiz</h1>
+<p>there are 5 hard and challenging questions for you to solve.Get them right!!!</p>
+    <h3>Question 1</h3>
+    <h4>How much header tags are there?</h4>
+    <div>
+    
+        <button onclick="wrong(this)">3</button>
+        <button onclick="wrong(this)">5</button>
+        <button onclick="wrong(this)">8</button>
+        <button onclick="right(this)">6</button>
+    </div>
+    <h3>Qusetion 2</h3>
+    <h4>What is 400+6543?</h4>
+    <div>
+    
+        <button onclick="wrong(this)">6738</button>
+        <button onclick="right(this)">6943</button>
+        <button onclick="wrong(this)">6944</button>
+        <button onclick="wrong(this)">6709</button>
+    </div>
+    <h3>Questions 3</h3>
+    <h4>How many Pets do I have?</h4>
+    <div>
+    <button onclick="right(this)">1</button>
+        <button onclick="wrong(this)">2</button>
+        <button onclick="wrong(this)">3</button>
+        <button onclick="wrong(this)">4</button>
+    </div>
+     <h3>Questions 4</h3>
+    <h4>What is my favorite sport?</h4>
+    <div>
+    <button onclick="wrong(this)">Tenniss</button>
+        <button onclick="wrong(this)">Soccer</button>
+        <button onclick="wrong(this)">Football</button>
+        <button onclick="right(this)">Cricket</button>
+    </div>
+    <h3>Questions 5</h3>
+    <h4>What is my favorite game?</h4>
+    <div>
+    <button onclick="wrong(this)">Mario</button>
+        <button onclick="wrong(this)">Fortnight</button>
+        <button onclick="wrong(this)">Dreambox</button>
+        <button onclick="right(this)">Minecraft</button>
+    </div>
+    <h1 id="quizScore">Score: 0</h1>
+    <script>
+       var totalCorrect = 0;
+        var totalWrong = 0;
+        function right(elem){
+           elem.style.backgroundColor = "green";
+            totalCorrect+=1;
+           
+            document.getElementById("quizScore").innerHTML = "Score: " + (totalCorrect - totalWrong)
+            
+        }
+        function wrong(elem){
+            elem.style.backgroundColor = "red";
+            totalWrong+=1;
+            
+            document.getElementById("quizScore").innerHTML = "Score: " + (totalCorrect - totalWrong)
+            
+        }
+    </script>
+</body>
