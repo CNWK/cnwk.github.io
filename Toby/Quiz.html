@@ -1,0 +1,82 @@
+ 
+<head>
+<link href="style.css" rel="stylesheet" type="text/css">
+    <title>Quiz game</title>
+</head>
+<body>
+    <div class="tabs">
+        <a href="index.html">Home</a>
+        <a href="food.html">Food</a>
+        <a href="opinions.html">Opinions</a>
+        <a href="games.html">Games</a>
+        <a href="Quiz.html">Quiz</a>
+        <a href="media.html">Media</a>
+    </div>
+    <h1>welcome to my Quiz</h1>
+    <p>There are 5 questions. Try to get them all right!</p>
+                <h3>Queston 1</h3> 
+    <h4>how many header tags are there ??????</h4>
+    <div>
+    
+    <button onclick="wrong(this)">8</button>
+    <button onclick="wrong(this)">7</button>
+    <button onclick="wrong(this)">5</button>
+    <button onclick="right(this)">6</button>
+    </div>
+                  <h3>Queston 2</h3> 
+    <h4> what was the first Star wars movie?</h4>
+    <div>
+    
+    <button onclick="wrong(this)">The Phantom menace</button>
+    <button onclick="wrong(this)">The Empire strikes back</button>
+    <button onclick="right(this)">A new Hope </button>
+    <button onclick="wrong(this)">Revenge of the sith</button>
+    </div>
+                  <h3>Queston 3</h3> 
+    <h4> how many times has the line "I have a bad feeling about this" been said ??????</h4>
+    <div>
+    
+    <button onclick="wrong(this)">2</button>
+    <button onclick="wrong(this)">8</button>
+    <button onclick="wrong(this)">5</button>
+    <button onclick="right(this)">9</button>
+    </div>
+                  <h3>Queston 4</h3> 
+    <h4>what alien species is Yoda ??????</h4>
+    <div>
+    
+    <button onclick="wrong(this)">yodai</button>
+    <button onclick="wrong(this)">kaminoan</button>
+    <button onclick="wrong(this)">geonosian</button>
+    <button onclick="right(this)">none</button>
+    </div>
+                  <h3>Queston 5</h3> 
+    <h4> ?</h4>
+    <div>
+    
+    <button onclick="wrong(this)">?</button>
+    <button onclick="wrong(this)">?</button>
+    <button onclick="wrong(this)">?</button>
+    <button onclick="right(this)">?</button>
+    </div>
+    <h1 id="quizScore">score:0 </h1>
+  <script>
+                    
+    var totalCorrect = 0;
+      var totalWrong = 0;
+    function right(elem){
+        elem.style.backgroundColor = "green";
+        totalCorrect+=1;
+        document.getElementById("quizScore").innerHTML = "score: " + (totalCorrect - totalWrong)
+    }
+      
+      function wrong(elem){
+        elem.style.backgroundColor = "red";
+          totalWrong+=1;
+           document.getElementById("quizScore").innerHTML = "score: " + (totalCorrect - totalWrong)
+      }
+    </script>  
+    
+    
+</body>
+

@@ -1,0 +1,72 @@
+
+    p{
+        color:aqua;
+    }  
+h{
+    color:blue;
+}
+
+    body{
+   
+        background-image: url(https://wallpapercave.com/wp/K2LFZ6d.jpg);
+        color:orange;
+    }
+    a {
+        color:azure;
+    }
+.tabs a{ 
+float: left;
+color:#f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px
+        
+}
+.tabs a:hover {background-color: #ddd;
+color: cornflowerblue;
+}
+
+.tabs a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+.tabs {
+overflow: hidden;
+background-color: #333;    
+}
+table {font-family:sans-serif;border-collapse: collapse;
+    width: 100%;}
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color:aqua;    
+}
+
+tr:nth-child(odd) {
+    background-color:forestgreen;    
+}
+
+th {
+    font-size: 20px;
+    font-style: oblique;
+    text-shadow: 2px 2px #cccccc;
+}
+
+button.clicker {
+width: 100%;
+    height: 33%;
+ background-color: darkorange;       
+ color: red;
+    font-size: 5em;
+ font-family: cursive;
+ text-align: center;   
+}
+
+.game {
+    text-align: center;
+}
