@@ -1,0 +1,144 @@
+<head>
+    <style> 
+        .tab {
+            overflow: hidden; 
+            border: 1px solid #ccc;
+            background-color: deeppink
+        }
+        .tab a{
+            text-decoration: none;
+            padding: 14px 16px;
+            text-align: center;
+            font-size: 17px;
+            float:left;
+        }
+        .tab a:hover {
+            background-color: crimson
+        }
+        .tab a.active {
+        background-color:aqua;
+        }
+    </style>
+</head>
+<body>
+<div class="tab"> 
+ <a href="index.html"   >Home</a>
+    <a href="food.html">food</a>
+      <a href="hobbies.html">hobbies</a>
+    <a href="games.html" class="active">games</a>
+    <a href="Opinions.html" >opinions</a>
+    </div>   
+
+<h1> Here are some games</h1>
+    <img width="300px" src = "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/HNKS2?wid=3188&hei=2099&fmt=jpeg&qlt=95&op_usm=0.5,0.5&.v=1573236454283">
+<h2> this is my quiz</h2>    
+<script>
+// Edit your script here
+var points = 0;
+
+function right(elem){
+    elem.style.backgroundColor = "green";
+    points++;
+    document.getElementById("counter").innerHTML = "Score: " + points;
+}
+
+ function wrong(elem){
+     elem.style.backgroundColor = "red";
+     points--;
+     document.getElementById("counter").innerHTML = "Score: " + points;
+}
+
+</script>
+<!-- edit your html here -->
+<h2>Question 1.</h2>
+<h3> whats one plus one</h3>
+<button onclick="right(this)">2</button>
+<button onclick="wrong(this)">1000000</button>
+
+<h2>Question 2.</h2>
+<h3> How many eyes does a spider have? </h3>
+<button onclick="right(this)">8</button>
+<button onclick="wrong(this)">2</button>
+<button onclick="wrong(this)">4</button>
+
+<h2>Question 3.</h2>
+<h3> what is posionous to dogs? </h3>
+<button onclick="right(this)">Avocado</button>
+<button onclick="wrong(this)">chicken</button>
+<button onclick="wrong(this)">peanut butter</button>
+
+<h2>Question 4.</h2>
+<h3> what NOT posionous to dogs? </h3>
+<button onclick="right(this)">eggs</button>
+<button onclick="wrong(this)">garlic</button>
+<button onclick="wrong(this)">avocado</button>
+
+<h2>Question 5.</h2>
+<h3> do cats purr? </h3>
+<button onclick="right(this)"> yes</button>
+<button onclick="wrong(this)">no</button>
+<button onclick="wrong(this)">i don't know</button>
+
+<h2>Question 6.</h2>
+<h3> can covid-19 kill you </h3>
+<button onclick="wrong(this)"> no</button>
+<button onclick="right(this)">yes</button>
+<button onclick="wrong(this)">i don't know</button>
+
+<h2>Question 7.</h2>
+<h3> which movie did darth vader DIE</h3>
+<button onclick="wrong(this)"> Empire Strikes Back</button>
+<button onclick="right(this)">Return of the Jedi</button>
+<button onclick="wrong(this)">He never DIED</button>
+<button onclick="wrong(this)">The Rise of Skywalker</button>
+
+<h2>Question 8.</h2>
+<h3> what is 1 million times 1 million</h3>
+<button onclick="wrong(this)">2 trillion</button>
+<button onclick="wrong(this)">1 million</button>
+<button onclick="right(this)">1 trillion</button>
+
+<h2>Question 9.</h2>
+<h3> what percentage of our brain do we use?</h3>
+<button onclick="wrong(this)">10</button>
+<button onclick="wrong(this)">50</button>
+<button onclick="right(this)">100</button>
+<button onclick="wrong(this)">0</button>
+
+<h2>Question 10.</h2>
+<h3> how many people lived on earth in 2019</h3>
+<button onclick="wrong(this)">7,567,130,400</button>
+<button onclick="wrong(this)">8,577,130,400</button>
+<button onclick="wrong(this)">6,577,130,400</button>
+<button onclick="right(this)">7,577,130,400</button>
+
+<h1>more questions coming SOON!!!!!!!!!!!!!!</h1>
+<h1 id="counter">Score: 0 </h1>
+    
+<h2> this is my clicker game</h2>
+ <script>
+var clicks = 0;
+    function addOne(){
+    clicks+=1;
+        document.getElementById("counter2").innerHTML = "Clicks: " + clicks;
+    }
+    function addTwo(){
+    clicks+=2;
+        document.getElementById("counter2").innerHTML = "Clicks: " + clicks;
+    }
+    function gamble(){
+    if(clicks >= 50){
+        clicks -= 50;
+            clicks += Math.floor(Math.random() * 100);
+            document.getElementById("counter2").innerHTML = "Clicks: " + clicks;
+        }
+    }
+</script>
+<h1>My Clicker Game</h1>
+<button onclick="addOne()" style="background-color:pink; color:blue; width:200px; height:150px;font-size:30px">Click Me!</button>
+<button onclick="addTwo()" style="background-color:pink; color:blue; width:200px; height:150px;font-size:25px;">No, Click Me!</button>
+<button onclick="gamble()" style="background-color:pink; color:blue; width:200px; height:150px;font-size:25px;">GAMBLE! Costs 50 clicks</button>
+<h3 id="counter2">Clicks: 0</h3>
+
+
+    </body>
