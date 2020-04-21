@@ -1,0 +1,119 @@
+<head> 
+
+    <style>
+    .tab    {
+        overflow: hidden;
+        border : 1px solid #ccc; 
+        background-color: cadetblue;
+        }
+    .tad a {
+        text-decoration: none;
+        padding: 14px 16px;
+        text-align: center;
+        font-size: 17px;
+        float: left;
+    }
+    .tab a:hover{
+        background-color: darkblue;
+    }
+    .tab a.active{
+        background-color: chocolate;
+    }
+    </style>
+</head>  
+<body>
+    <div class="tab">
+    <a href="index.html" class="active" >Home</a>
+        <a href="food.html">Food</a>
+        <a href="games.html">Games</a>
+        <a href="Opnions.html">Opnions</a>
+    </div>
+
+    <h1>Play my Games</h1>
+    <p>Games you must play</p>
+    <script>
+// Edit your script here
+var points = 0;
+
+function right(elem){
+	elem.style.backgroundColor = "green";
+	points++;
+    document.getElementById("counter").innerHTML = "Score: " + points;
+}
+
+function wrong(elem){
+	elem.style.backgroundColor = "red";
+points--;
+    document.getElementById("counter").innerHTML = "Score: " + points;
+}
+</script>
+<!-- edit your html here -->
+<h2>Question 1.</h2>
+<h3> What is 1 + 1?</h3>
+<button onclick="wrong(this)">4</button>
+<button onclick="right(this)">2</button>
+<button onclick="wrong(this)">10000</button>
+
+<h3>Question 2.</h3>
+<h3> How many eyes does a spider have?</h3>
+<button onclick="right(this)">8</button>
+<button onclick="wrong(this)">4</button>
+<button onclick="wrong(this)">10</button>
+
+<h2>Question 3.</h2>
+<h3> What does Ave mean?</h3>
+<button onclick="wrong(this)">Crush</button>
+<button onclick="right(this)">Hail</button>
+<button onclick="wrong(this)">True</button>
+
+<h2>Question 4.</h2>
+<h3>When did  the roman empire fall?</h3>
+<button onclick="wrong(this)">385 AD</button>
+<button onclick="right(this)">375 AD</button>
+<button onclick="wrong(this)">400 AD</button>
+
+<h2>Question 5.</h2>
+<h3> What is 27 x 35?</h3>
+<button onclick="wrong(this)">935</button>
+<button onclick="right(this)">945</button>
+<button onclick="wrong(this)">955</button>
+
+<h2>Question 6.</h2>
+<h3> How many pokemon can you have on your team at once?</h3>
+<button onclick="wrong(this)">4</button>
+<button onclick="right(this)">6</button>
+<button onclick="wrong(this)">10</button>
+
+<h2>Question 7.</h2>
+<h3> What is The capital of Italy?</h3>
+<button onclick="wrong(this)">I dont know</button>
+<button onclick="right(this)">Rome</button>
+<button onclick="wrong(this)">Italy</button>
+
+
+
+    <h1 id="counter">Score: 0</h1>
+    
+<script>
+	var clicks = 0;
+    function addOne(){
+    	clicks+=1;
+        document.getElementById("counter2").innerHTML = "Clicks: " + clicks;
+    }
+    function addTwo(){
+    	clicks+=2;
+        document.getElementById("counter2").innerHTML = "Clicks: " + clicks;
+    }
+    function gamble(){
+    	if(clicks >= 50){
+        	clicks -= 50;
+            clicks += Math.floor(Math.random() * 100);
+            document.getElementById("counter2").innerHTML = "Clicks: " + clicks;
+        }
+    }
+</script>
+<h1>My Clicker Game</h1>
+<button onclick="addOne()" style="background-color:pink; color:blue; width:200px; height:150px;font-size:30px">Click Me!</button>
+<button onclick="addTwo()" style="background-color:pink; color:blue; width:200px; height:150px;font-size:25px;">No, Click Me!</button>
+<button onclick="gamble()" style="background-color:pink; color:blue; width:200px; height:150px;font-size:25px;">GAMBLE! Costs 50 clicks</button>
+<h3 id="counter2">Clicks: 0</h3>
