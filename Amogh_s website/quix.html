@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html>
+
+ <head>
+     <title>10 BEST MOVIES</title>
+     <link href="style.css" rel="stylesheet" type="text/css">
+ </head>
+<script>
+    var points = 0;
+
+    function right(elem){
+        elem.style.backgroundColor = "green";
+        points++;
+        document.getElementById("counter").innerHTML = "Score: " + points;
+    }
+
+    function wrong(elem){
+        elem.style.backgroundColor = "red";
+        points--;
+        document.getElementById("counter").innerHTML = "Score: " + points;
+    }
+
+</script>
+ <body style="background-color: cadetblue">
+     <div class="tab">
+          <a style="color:darkgoldenrod" href="index.html">10 BEST GAMES</a>
+         
+          <a style="color:gold" href="food.html">Food</a>
+     
+          <a style= "color: darkgoldenrod" href="movies.html">Movies</a>
+         
+          <a style="color: gold" href="opinions.html">Opinions and a clicker game</a>
+         
+          <a style="color: darkgoldenrod" href="hobbies.html">Hobbies</a>
+         
+          <a style="color: gold" href="quix.html">Quiz</a>
+         
+     </div>
+     <h2>Question.1</h2>
+     <h3>When was Minecraft released?</h3>
+     <button onclick="wrong (this)">1800</button>
+     <button onclick="wrong (this)">1980</button>
+     <button onclick="right (this)">2010</button>
+     <button onclick="wrong (this)">2011</button>
+     <button onclick="wrong (this)">2020</button>
+     
+     
+     <h2>Question.2</h2>
+     <h3>What is the strongest thing in the world that we know of?</h3>
+     <button onclick="wrong (this)">Emerald</button>
+     <button onclick="wrong (this)">Diamond</button>
+     <button onclick="right (this)">Titaniam</button>
+     <button onclick="wrong (this)">Gold</button>
+     <button onclick="wrong (this)">Silver</button>
+     
+     <h1 id="counter">Score: 0</h1>  
+    
+    </body>
+</html>

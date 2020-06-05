@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html>
+
+ <head>
+     <title>Opinions</title>
+     <link href="style.css" rel="stylesheet" type="text/css">
+ </head>
+<script>
+  var clicks = 0;
+  function addOne(){
+    clicks+=1;
+    document.getElementById("counter").innerHTML ="Clicks: " + clicks;
+    }
+</script>
+ <body style="background-color: cadetblue">
+     <div class="tab">
+          <a style="color:darkgoldenrod" href="index.html">10 BEST GAMES</a>
+         
+          <a style="color:gold" href="food.html">Food</a>
+     
+          <a style= "color: darkgoldenrod" href="movies.html">Movies</a>
+         
+          <a style="color: gold" href="opinions.html">Opinions and a clicker game</a>
+         
+          <a style="color: darkgoldenrod" href="hobbies.html">Hobbies</a>
+         
+          <a style="color: gold" href="quix.html">Quiz</a> 
+         
+     </div> 
+<h1>Opinions</h1>
+             <table>
+                   <tbody>
+                       <tr> 
+                      <th>Categoty</th>
+                      <th>Good</th>
+                      <th>Bad</th>
+                       </tr>
+                       <tr>
+                       <th>Animal</th>
+                       <td>Komodo Dragon</td>
+                       <td>cats</td>
+                       </tr>
+                       <tr>
+                       <th>Video Games</th>
+                           <td> War Robots</td>
+                           <td>None</td>
+                       </tr>
+                       <tr>
+                       <th>Sports</th>
+                       <td>Cricket</td>
+                       <td>None</td>
+                       </tr>
+                   </tbody>  
+            </table>
+     <h1>My Clicker Game</h1>
+     <button onclick="addOne()" style="background-color: firebrick;color: darkblue;width:100px;height:100px;font-size:30px">CLICK ME!!!</button>
+     <h3 id="counter"> Clicks:0</h3>       
+      </body>  
+</html>
+
