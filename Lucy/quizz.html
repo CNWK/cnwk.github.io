@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+        <html>
+            <head>
+        
+            <title>Lucy's Website</title>
+            <link href="Style.css" rel="stylesheet" type="text/css">
+            </head>
+            <script>
+            var points = 0;
+
+    function right(elem){
+        elem.style.backgroundColor = "green";
+        points++;
+        document.getElementById("counter").innerHTML = "Score: " + points;
+    }
+
+    function wrong(elem){
+        elem.style.backgroundColor = "red";
+        points--;
+        document.getElementById("counter").innerHTML = "Score: " + points;
+    }
+            </script>
+           <body style="background-color: paleturquoise"> 
+                <div class="tad">
+                
+                    <a href="index.html">Home</a>
+                    <a href="food.html">Food</a>
+                    <a href="opinions.html">Opinions and Clicker Game</a>
+                    <a href="Hobbies.html"> Hobbies</a>
+                    <a href="quizz.html"> Quizz</a>                                                           
+                </div>      
+            <h3> Quizz</h3>
+        <h2>Question 1.</h2>
+        <h3>How fast can a cheetah run?</h3>
+        <button onclick="wrong(this)">20mph-30mph</button>    
+        <button onclick="right(this)">60mph-70mph</button>   
+        <button onclick="wrong(this)">100mph-300mph</button>   
+        <h2>Question 2.</h2>   
+        <h3>Ture or False,The Red Panda is in the Gaint Panda family.</h3>   
+        <button onclick="wrong(this)">Ture</button>   
+        <button onclick="right(this)">False</button>   
+        <h2>Question 3.</h2>    
+        <h3>What is the slowest  animal in the world?</h3>    
+        <button onclick="wrong(this)">Snake</button>   
+        <button onclick="wrong(this)">Snail</button>   
+        <button onclick="right(this)">Sloth</button>   
+        <h2>Question 4.</h2>    
+        <h3>What has a head and tail but no body?</h3>    
+        <button onclick="wrong(this)">Snake</button>    
+        <button onclick="right(this)">A Coin</button>       
+        <button onclick="wrong(this)">Nothing</button>       
+               
+               <h1 id="counter">Score: 0</h1>
+            
+            
+            
+            </body>
+        </html>
+
+

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+        <html>
+            <head>
+        
+            <title>Lucy's Website</title>
+            <link href="Style.css" rel="stylesheet" type="text/css">
+            </head>
+            <script>
+                var clicks = 0;
+                function addOne(){
+                        clicks+=1;
+                        document.getElementById("counter").innerHTML = "Clicks: " + clicks;
+                }
+            
+            
+            
+            
+            
+            
+            </script>
+            <body style="background-color: lavenderblush"> 
+                <div class="tad">
+                
+                    <a href="index.html">Home</a>
+                    <a href="food.html">Food</a>
+                    <a href="opinions.html">Opinions and Clicker Game</a>
+                    <a href="Hobbies.html"> Hobbies</a>
+                    <a href="quizz.html"> Quizz</a>
+                </div>      
+                 <h1> Opinions and Clicker Game</h1>
+                 <table>
+                    <tbody>
+                        <tr>
+                            <th> Category </th>
+                            <th> Good</th>
+                            <th> Bad</th>
+                            
+                            
+                        </tr>
+                        <tr>
+                            <th> Animal</th> 
+                            <td> Cheetah</td> 
+                            <td> Wasps</td>
+                        </tr>
+                        <tr>
+                            <th> Video Games</th>
+                            <td> Donkey Kong Jr. </td>
+                            <td> NONE</td>
+                        <tr>
+                            <th> Movies</th>
+                            <td>  Frozen 2</td>
+                            <td> NONE</td>
+                        </tr>
+                     </tbody>
+                 </table>
+                 <h1> My Clicker Game</h1>
+                 <button onclick="addOne()" style="background-color:lightcyan;width:150px;height:100px; font-size:30px">Click Me!!</button>
+                 <h3 id="counter"> Clicks:0</h3>
+                </body>
+            </html>
