@@ -1,0 +1,28 @@
+P{
+  background-color: greenyellow;
+}
+body{
+    text-align: left;
+    
+}
+
+a {
+    position: relative;
+    color: aqua;
+    border: 5px solid green; 
+} 
+a:hover{
+    background-color:chartreuse ;
+}
+table{
+       background-color: gold;
+       width: 100%;
+}
+td,th{
+    border: 1px solid #dddddd;
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+    color: blue;
+    
+}
