@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>    
+        <title>Caitlyn's website</title>
+        <link href="Style.css" rel="stylesheet" type="text/css">
+    </head>
+    <script>
+        var clicks= 0;
+        function addOne(){
+            clicks += 1;
+            document.getElementById("counter").innerHTML = "Clicks: " + clicks;
+        }
+    </script>
+
+    <body style="background-color: lightskyblue">
+         <div class="tab">
+            <a href="index.html">Home</a>
+            <a href="food.html">Food</a>
+            <a href="opinions.html">Opinions</a>
+            <a href="Hobbies.html">Hobbies</a>
+            <a href="Quiz.html"> Quiz</a>
+        </div>
+        <h2 style="text-align: center"> Opinions Chart</h2>
+        <table align="center">
+            <tbody>
+                <tr>
+                    <th>Category</th>
+                    <th>Good</th>
+                    <th>Bad</th>
+                </tr>
+                <tr>
+                    <th> Sports</th>
+                    <td> Volleyball</td>
+                    <td> Ref's</td>
+                </tr>
+                <tr>
+                    <th> Animals</th>
+                    <td> Dogs</td>
+                    <td> Spiders</td>
+                </tr>
+                <tr>
+                    <th> Food</th>
+                    <td> Chesseburgers</td>
+                    <td> Sea Food</td>
+                </tr>
+                <tr>
+                    <th> Food Pics</th>
+                    <td><img height="100" src="https://tse2.mm.bing.net/th?id=OIP.bKK_i7Vr2bgEqgMgXay6QQHaE8&pid=Api&P=0&w=247&h=165"/> </td>
+                    <td><img height="100" src="https://www.sgs.com/-/media/global/images/structural-website-images/hero-images/hero-seafood.jpg?la=en"></td>
+                </tr>
+            </tbody> 
+            
+        </table>
+        <h1> My clicker game!</h1>
+        <button onclick="addOne()"
+        style="background-color:cadetblue;color:darkslategrey;width: 200px;height:150px;font-size:30px">Click me!</button>
+        <h3 id="counter"> Clicks:0</h3>
+        
+    </body>
+</html>  
