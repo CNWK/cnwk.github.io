@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+         <title> Niko's website </title>
+        <link href="style.css" rel="stylesheet" type="text/css">
+    </head>
+    <script>
+        var points = 0;
+        function right(elem){
+            elem.style.backgroundColor= "green";
+            points++;
+            document.getElementById("counter").innerHTML = "Points: " + points
+        }
+            function wrong(elem){
+            elem.style.backgroundColor= "red";
+            points--;
+            document.getElementById("counter").innerHTML = "Points: " + points
+            
+        }
+    
+    
+    
+    </script>
+    
+    
+    
+    
+    <body style="background: green">
+         <h3>Niko</h3>
+         <div class="tab">
+            <a href="index.html"> Home</a>
+            <a href="food.html">Food</a>
+             <a href="opinions.html">opiniions</a>
+             <a href="hobbys.html">hobbys</a>
+             <a href="quiz.html"> quiz</a>
+        </div>
+        <h1> Nikolai's Quiz</h1>
+        <h2>Quiestion 1</h2>
+        <h3>what is 23x150</h3>
+        <button onclick="right(this)">2750</button>
+        <button onclick="wrong(this)">100</button>
+        <button onclick="wrong(this)">1000</button>
+        <h3 id="counter"> Clicks:0</h3>
+        
+        <h2>Quiestion 2</h2>
+        <h3>What is 300x30</h3>
+        <button onclick="wrong(this)">5000</button>
+        <button onclick="right(this)">9000</button>
+        <button onclick="wrong(this)">6000</button>
+        
+        <h2>Quiestion 3</h2>
+        <h3>What is 400x66</h3>
+        <button onclick="wrong(this)">6745</button>
+        <button onclick="wrong(this)">3960</button>
+        <button onclick="right(this)">5902</button>
+        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    </body>
+
+</html>   
