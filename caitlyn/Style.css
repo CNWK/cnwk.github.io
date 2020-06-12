@@ -1,0 +1,28 @@
+p {
+    background-color: lightskyblue;
+}
+body {
+    text-align: left;
+    font: times new roman;
+}
+a {
+    position: relative;
+    color: darkslateblue;
+    border: 1px solid darkblue;
+    padding: 10p;
+    text-decoration: none;
+    top: 5px;
+}
+    a:hover {   
+        background-color: darkblue;
+    }
+     table {
+         background-color: black;   
+        width: 70%;
+     }
+td,th{
+    border: 1px solid #dddddd;
+     font-size: 15px;
+    padding:5px;
+    color: darkslategrey;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>    
+        <title>Caitlyn's website</title>
+        <link href="Style.css" rel="stylesheet" type="text/css">
+    </head>
+    <script>
+        var points = 0;
+        function right(elem){
+            elem.style.backgroundColor= "green";
+            points++;
+            
+            document.getElementById("counter").innerHTML = "Points: " + points;
+        }
+        function wrong(elem){
+            elem.style.backgroundColor="red";
+            points--;
+            
+            document.getElementById("counter").innerHTML = "points: " + points;
+        }
+        
+    
+    </script>
+
+    <body style="background-color: rosybrown">
+         <div class="tab">
+            <a href="index.html">Home</a>
+            <a href="food.html">food</a>
+            <a href="opinions.html">Opinions</a>
+            <a href="Hobbies.html">Hobbies</a>
+            <a href="Quiz.html"> Quiz</a>
+        </div>
+        <h2> Caitlyn's Quiz</h2>
+        <h3> Question 1</h3>
+        <h4> What is the fastest land animal?</h4>
+        <button onclick="right(this)">Cheetah</button>
+        <button onclick="wrong(this)">Peregrine Falcon</button>
+        <button onclick="wrong(this)">Leoparde</button>
+        <h3> Question 2</h3>
+        <h4> Are Giraffe's herbivores,carnivore,or omnivore?</h4>
+        <button onclick="wrong(this)">Carnivore</button>
+        <button onclick="right(this)">Herbivores</button>
+        <button onclick="wrong(this)">Omnivore</button>
+        <h3> Question 3</h3>
+        <h4> Are dog's more of a favorite or are cat's?</h4>
+        <button onclick="wrong(this)">Cat's</button>
+        <button onclick="right(this)">Dog's</button>
+        <h3> Question 4</h3>
+        <h4> What is the most popular dog breed?</h4>
+        <button onclick="wrong(this)">Chihuahua</button>
+        <button onclick="wrong(this)">Pug</button>
+        <button onclick="right(this)">Labrador Retriever</button>
+        <h3 id="counter"> Points:0</h3>
+    </body>
+</html>
