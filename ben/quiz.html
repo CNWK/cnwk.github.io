@@ -1,0 +1,53 @@
+<!doctype> 
+<html>
+    <head>
+        <title style="color: magenta"> ben </title>
+        <link href="style.css" rel="stylesheet" type="text/css">
+    </head>
+    <script>
+        var points = 0;
+        function right(elem){
+            elem.style.backgroundColor= "green";
+            points++;
+            document.getElementById("counter").innerHTML="Points : " + points;
+        
+        }  
+        function wrong(elem){
+            elem.style.backgroundColor="red";
+            points--;
+            document.getElementById("counter").innerHTML="Points : " + points;
+        } 
+ 
+     
+    </script>
+    
+    <body style="background-color:black">
+        <div class="tab">
+            <a href="idex.html">home</a> 
+            <a href="food.html">food</a>
+            <a href="opinion.html">opinionl</a>
+            <a href="hobby.html">hobby</a>
+            <a href="quiz.html">quiz</a>
+        </div>
+        
+<h1>ben</h1>
+<h2> question 1</h2>
+<h3> is the black hole the only hole </h3>
+<button onclick="right(this)">true</button>
+<button onclick="wrong(this)">fales</button>
+<button onclick="wrong(this)"></button>
+<h2> question 2</h2>
+<h3> is ther a flying car in space right now</h3>
+<button onclick="wrong(this)">no</button>
+<button onclick="right(this)"> yes</button>
+        
+        
+        
+        
+        <h3 id="counter">  clicks:0</h3>
+ 
+    
+    </body>
+    
+    
+</html>

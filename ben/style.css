@@ -1,0 +1,36 @@
+h1,h3{
+    color:green;
+}
+p {
+   background-color: red; 
+}body 
+ text-align: center;                                         
+ font: times new roman;
+}
+a{
+    
+  position: relative;
+  color: firebrick;  
+  border: 5px;  
+  padding: 20px  
+  text-decoration: none; 
+  top: 10px;  
+}
+a:hover{
+    background:-color: red;
+}
+table{
+    background-color: cyan;
+    width: 100%;
+}
+td,th{
+   border: 5px solid #dddddd;
+    font-size: 25px; 
+    text-align: center;
+    padding:25px;
+    color:red;
+
+}
+
+
+
