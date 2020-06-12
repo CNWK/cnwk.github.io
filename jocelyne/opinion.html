@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Jocelyne's website</title>
+        <link href="style.css" rel="stylesheet" type="text/css">
+    </head>
+    <script>
+        var clicks =0;
+    function addOne(){
+        clicks+=1;
+         document.getElementById("counter").innerHTML = "clicks: " + clicks;
+    }
+    </script>
+    
+
+     <body style="background-color: beige"> 
+         <div class="tab">
+            <a href="index.html">Home</a>
+            <a href="food.html"> Food</a>
+             <a href="opinion.html">opinion</a>
+             <a href="hobbies.html">hobbies</a>
+             <a href="quiz.html">quiz</a>
+        </div>
+        <h1 style="text-alighn: center"> opinion chart</h1>
+         <table>
+             <tbody>
+                 <tr>
+                     <th>Category</th>
+                     <th>Good</th>
+                     <th>bad</th>
+                 
+                 </tr>
+                 <tr>
+                     <th>Animal</th>
+                     <td>Cats</td>
+                     <td>All bugs</td>
+                     
+                 </tr>
+                 <tr>
+                      <th>houses</th>
+                     <td>cottage</td>
+                     <td>mansion</td>
+                        
+                 </tr>
+                 <tr>
+                       <th>house pics</th>
+                       <td><img height="50" src="https://mk0frugalforlesh94so.kinstacdn.com/wp-content/uploads/2017/06/cheap-housing-options.jpg"/></td>
+                 
+                 </tr>
+             
+             </tbody>
+         
+         </table>
+         <h1> My clicker game!</h1>
+         <button onclick="addOne()"
+         style="background-color:cadetblue;color: black;width: 200px;front-size: 30px"> Click me:</button>
+         <h3 id="counter"> Click:0</h3>
+         
+     </body>
+</html>
