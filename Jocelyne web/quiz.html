@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Jocelyne's website</title>
+        <link href="style.css" rel="stylesheet" type="text/css">
+    </head>
+    <script>
+        var points = 0;
+        function right(elem){
+         elem.style.backgroundColor= "beige";
+            points++;
+            
+            document.getElementById("counter").innerHTML = "points: " + points;
+            
+            
+        }
+        function wrong(elem){
+            elem.style.backgroundcolor = "red";
+            points--;
+            document.getElementById("counter").innerHTML = "points: " + points;
+            
+        }
+    
+    
+    
+    
+    </script>
+
+     <body style="background-color: beige"> 
+         <div class="tab">
+            <a href="index.html">Home</a>
+            <a href="food.html"> Food</a>
+            <a href="opinion.html">opinion</a>
+             <a href="hobbies.html">hobbies</a>
+             <a href="quiz.html">quiz</a>
+        </div>
+         <h1>Jocelyne's web</h1>
+         <h2> Question 1</h2>
+         <h3> what is the tallest animal in the world</h3>
+         <button onclick="right(this)">giraffe</button>
+         <button onclick="wrong(this)">elephant</button>
+         <button onclick="wrong(this)">cow</button>
+         <h1>Question 2</h1>
+         <h2> What does a cow say?</h2>
+         <button onclick="wrong(this)">woof</button>
+         <button onclick="right(this)">moooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo</button>
+         <button onclick= "wrong(this)">baby shark do do do do do do, baby shark do do do do do do</button>
+         <h1>Question 3</h1>
+         <h2> Which of these answers is not a word?</h2>
+         <button onclick="wrong(this)">HAPPY</button>
+             <button onclick="right(this)">kahgwyuwgsughuahvifufiduiedhagiahghfuighjksghgjaglfyiodahvuidjkshuitghriuhguidhuighwhuijgiojgiowhtuhfuwhugihsijghwijghishguhguwhtyhtrughuthgiuanvjifhgyushfughreuifhguirdhfjgreguhiwphgsbthwguirihlfdhbjfgbhvfijwnvhwiohjtrtuiiwrjggjkfjfuisdhfjknvjvvvinvryoynruioyuriaoyruoiyenvhfuovnjvnvbvaljfdlffhjvinvhulavvvmc,mnbvcxzzzaszxdfcghjkl;poiuytrewqasdfghjklmnbvcxzzaqwertyuioplkjhgfdsxcgbhjnhgfdfghjhrewrtyujhrewqruyr5tyujhruyjhtyjh3rtewrgrewrfghewghewghrfefghrfefghngfretgh</button>
+             <button onclick="wrong(this)">supercalifragilisticexpialidocious</button>
+             <h1>Question 4</h1>
+             <h2>Which color is purple</h2>
+             <button onclick="right(this)">purple</button>
+             <button onclick="wrong(this)">anhjfihxighusil</button>
+             
+             
+             
+         <h3 id="counter"> Click:0</h3>
+         
+     </body>
+</html>
