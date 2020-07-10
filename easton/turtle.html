@@ -1,0 +1,54 @@
+<!DOCTYPE  html>
+<html>
+<head>
+  <title> Easton's Website</title>  
+    <link href="style.css" rel= "stylesheet" type="text/css">
+</head>
+    <script>
+    var clicks=0;
+    function addone(){
+    clicks+=100000000000000000000000000000000000000000000000000000000000000000000000;    
+    document.getElementById("counter").innerHTML="Clicks: "+clicks;
+        
+    }
+    </script>
+    <body style="background-color: red">
+     <div class="tab">
+         <a href="index.html">Home</a>
+         <a href="food.html">Food</a>
+         <a href="turtle.html">Opinions</a>
+         <a href="lava.html">Hobbies</a>
+          <a href ="toy.html">Quiz</a>
+        </div> 
+    </body>  
+</html>
+<h1> My Opinions</h1>
+
+    <table>
+        <tbody>
+        <tr>
+            <th>Category</th>
+            <th>Good</th>
+            <th>Bad</th>
+        <tr>
+        <tr>
+            <th>Animal</th>
+            <td>turtle</td>
+            <td>Wasps</td>    
+        </tr>   
+        <tr>
+            <th> Video Games</th>
+            <td> Roblox</td>
+            <td> None!</td>
+            
+        </tr>
+        <tr> 
+            <th> Picture</th>
+            <td><img height="200" src="https://scx2.b-cdn.net/gfx/news/hires/2018/warmingwarni.jpg"></td>
+            <td><img height="200" src="https://i.ytimg.com/vi/Ued4DIQpf8Q/maxresdefault.jpg"></td>
+            </tr>
+        </tbody>
+    </table>
+<h1> My clicker game</h1>
+<button onclick="addone()"style="background-color: aqua;color:red;width:200px;height:200px;font-size: 30px">Click me!</button>
+<h3 id="counter">Clicks:0</h3>

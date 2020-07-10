@@ -1,0 +1,28 @@
+p{background-color: aqua
+}
+body{
+    text-align:  left
+    font:  times  new  roman;
+}
+a{
+    position:  relative;
+    color: blue;
+    border: 1px solid red;   
+    padding: 10px 
+}
+a:hover{
+ background-color: red
+}
+table{
+background-color: lightcoral;
+}
+td,th{
+border:1px solid blue;
+font-size:20px;
+text-align: center;
+padding: 20px;
+color: yellow;
+}
+img{
+
+    
