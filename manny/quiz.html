@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Manny's free trial app</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    </head>
+    <script>
+    var points =0;
+    function right(elem){
+        elem.style.backgroundColor="green";
+        points++;
+        document.getElementById("counter").innerHTML="Points:"+ points;
+    }
+    function wrong(elem){
+        elem.style.backgroundColor="red";
+        points--;
+        document.getElementById("counter").innerHTML="Points:"+ points;        
+    }
+    </script>
+    <body style="background-color: darkseagreen">
+        <div class="tab">
+            <a href="index.html">Home</a>
+            <a href="food.html">Food</a>
+            <a href="manny%20h6.html">Opinions</a>
+            <a  href="hobbies.html">Hobbies</a>     
+            <a href="quiz.html">Quiz</a>
+               </div>
+          <h1>My quiz</h1>
+          <h2> Question 1</h2>
+          <h3> What is one plus one</h3>
+          <button onclick="right(this)">2</button>
+          <button onclick="wrong(this)">10</button>
+          <button onclick="wrong(this)">100</button>
+          <h3 id="counter">Points: 0</h3>
+          <h3>Diary OF A wimpy kid: what does the new cover look like? </h3>
+            <button onclick="wrong(this)">2</button>
+            <button onclick="right(this)">     POOL</button>
+            <button onclick="wrong(this)">TOYS</button>
+        <h3>50+50 </h3>
+            <button onclick="wrong(this)">2</button>
+            <button onclick="wrong(this)"> 9</button>
+            <button onclick="right(this)">100</button>
+        </body>
+</html>
+      
+    
+            

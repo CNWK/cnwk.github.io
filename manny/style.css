@@ -1,0 +1,29 @@
+p{
+    background-color: darkolivegreen;
+}
+body{
+    text-align: left;
+    font: times new roman;
+    
+    
+}
+a{
+    position: relative;
+    color: darkgreen;
+    border: 1px solid coral;
+    padding: 10px;
+}
+a:hover{
+    background-color: darkgreen;
+}
+table{
+    background-color: darkgreen;
+     width:80%;   
+}
+td,th{
+    border: 1px solid red;
+}
+
+
+
+}
