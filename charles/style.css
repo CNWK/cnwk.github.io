@@ -1,0 +1,29 @@
+p{
+    background-color: azure;
+}
+body{
+    text-align: left;
+    font: times new roman;
+}
+a{
+   position: relative;
+    color: coral;
+    border: 1px solid coral;
+    padding: 10px;
+    
+}
+a:hover{
+    background-color: lightgreen;
+}
+table{
+    background-color: coral;
+    width: 80%;
+}
+td,th{
+    border: 1px solid blue
+        font-size:20px
+        text-align: center;
+}
+img{
+    
+}

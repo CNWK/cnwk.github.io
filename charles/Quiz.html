@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<hdml>
+    <head>
+        <title>Art Share</title>
+        <link href = "style.css" rel = "stylesheet" type="text/css">
+    
+    </head>
+    <script>
+        var points=0;
+        function right(elem){
+           elem.style.backgroundColor="green";
+            points++;
+            document.getElementById("counter").innerHTML ="Points: " + points;
+        }
+        function wrong(elem){
+            elem.style.backgroundColor="red"; 
+            points--;
+            document.getElementById("counter").innerHTML ="Points: " + points;
+        }
+    
+    
+    </script>
+    <body style="background-color: azure">
+        <div class = "tab">
+            <a href ="index.html">Home</a>
+            
+              <a href = "Start.html">Getting Started</a>
+            <a href = "Opinions.html">Opinions</a>
+            <a href= "Hobbies.html">Hobbies</a>
+            <a href= "Quiz.html">Do this quiz if your cool</a>
+        </div>
+        <h1>Just Do the Quiz</h1>
+        <h2>Question 1</h2>
+        <h3>What is the best clicker game</h3>
+        <button onclick="right(this)">This game</button>
+        <button onclick="wrong(this)">Any Other Game</button>
+        <button onclick="wrong(this)">None i hate them</button>
+        <h3 id="counter">Points: 0</h3>
+        
+        <h2>Question 2</h2>
+        <h3>Pick One</h3>
+        <button onclick="right(this)">This Game</button>
+        <button onclick="wrong(this)">Fortnite</button>
+        <button onclick="wrong(this)">Smite</button>
+        
+        <h2>Question 3</h2>
+        <h3>Why do you like this game</h3>
+        <button onclick="wrong(this)">Because it SUCKS</button>
+        <button onclick="right(this)">Because its fun</button>
+        <button onclick="right(this)">Because my friend is bribing me</button>
+    </body>
+
+</hdml>

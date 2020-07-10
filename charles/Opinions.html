@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<hdml>
+    <head>
+        <title>Art Share</title>
+        <link href = "style.css" rel = "stylesheet" type="text/css">
+    
+    </head>
+    <script>
+        var clicks=0;
+        function addOne(){
+            clicks+=1;
+            
+            document.getElementById("counter").innerHTML ="Clicks: " + clicks;}
+    
+    </script>
+            
+            
+    <body style="background-color: azure">
+        <div class = "tab">
+            <a href ="index.html">Home</a>
+            
+              <a href = "Start.html">Getting Started</a>
+            <a href = "Opinions.html">Opinions</a>
+            <a href= "Hobbies.html">Hobbies</a>
+            <a href= "Quiz.html">Do this quiz if your cool</a>
+        </div>
+        <h1> My Opinions</h1>
+        <table>
+            <tbody>
+                <tr>
+                <th>Category</th>
+                <th>Good</th>
+                <th>Bad</th>
+                </tr>
+                <tr>
+                    <th>Art</th>
+                    <td>Concept</td>
+                    <td>Abstract</td>
+                </tr>
+                <tr>
+                    <th>Video Games</th>
+                    <td>Call Of Duty WW2</td>
+                    <td>Adopt Me</td>
+                
+                </tr>
+                <tr>
+                   <th>Pictures</th>
+                    <td><img height = "100" src="https://upload.wikimedia.org/wikipedia/en/1/18/Call_of_Duty_WWII_Cover_Art.jpg"</td>
+                
+                </tr>
+            
+            </tbody>
+        
+        
+        </table>
+        <h1>My Clicker Game!</h1>
+        <button onclick ="addOne()"style="background-color:red;width:200px;height:150px;font-size:30px">Click Me Save Me From This Prison!>:(</button>
+        <h3 id="counter">Clicks:0 </h3>
+        
+        
+        
+        
+    </body>
+
+</hdml>
