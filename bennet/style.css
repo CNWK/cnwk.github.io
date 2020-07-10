@@ -1,0 +1,24 @@
+p{
+    background-color:aqua;
+}
+body{
+    text-align: left;
+    font: times new roman;
+}
+a{
+    position: relative;
+    color: aqua;
+border: 1px solid coral;
+ padding: :10px; 
+
+}
+a:hover{
+background-color: chartreuse
+}
+table{
+    background-color: aqua;
+    width: 80%;
+}
+td,th{
+    
+}

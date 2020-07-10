@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+          <title> bennet </title>
+        <link href="style.css" rel = "stylesheet" type="text/css"> 
+    
+    </head>
+        <script>
+            var points=0;
+            function right(elem){
+            elem.style.backgroundColor="green"
+            points++;
+            document.getElementById("counter").innerHTML ="points: " + points;
+                
+                
+            }
+             function wrong(elem){
+                 elem.style.backgroundColor="red"
+            points--;
+            document.getElementById("counter").innerHTML ="points: " + points;
+             }
+            
+        
+        </script>
+    <body style="background-color: goldenrod">
+        <div class = "tab">
+            <a  href  ="index.html">home</a>
+            <a href  =  "food.html">Food</a>
+            <a href = "bennet.html">Opinions</a>
+            <a href="hobby.html">Hobbies</a>
+            <a href="quiz.html">Quiz</a>
+        </div>                                                                                     
+        <h1> My quiz></h1>
+        <h2>Question 1</h2>
+        <h3> What is one plus one</h3>
+        <button onclick="wrong(this)">7</button>
+        <button onclick="right(this)">2</button>
+        <button onclick="wrong(this)">100</button>
+        <h3 id="counter">points: 0</h3>
+    </body>
+</html>
+<h1>whats 2 plus 2 </h1>
+        <button onclick="wrong(this)">10</button>
+        <button onclick="right(this)">4</button>
+        <button onclick="wrong(this)">35</button>
+                                                                                    
+
+<h1>what is 50 plus 20</h1>
+<button onclick="wrong(this)">40</button>
+        <button onclick="right(this)">70</button>
+        <button onclick="wrong(this)">50</button>                                    
+
+
+
+
+
