@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>clicker game</title>
+        <link href = "style.css" rel="stylesheet" type = "text/css">
+    </head>
+    <script>
+        var clicks = 0;
+        var points = 1;
+        function addOne(){
+            clicks= clicks + points;
+            document.getElementById("one").innerHTML = "my clicks: " + clicks;
+        }
+        function upgrade(){
+            if(clicks>10){
+            points = 5;
+            }
+        }
+    </script>
+    <script>
+        var score = 0;
+        function right(elem){
+            elem.style.backgroundColor="green";
+            score+=1;
+            document.gitElementById("counter").innerHTML("Score: " + score)
+        }
+        function wrong(elem){
+            elem.style.backgroundColor="red";
+            score-=1;
+            document.gitElementById("counter").innerHTML ="Score: " + score)
+        }
+        </script>
+    <body>
+        <div class= "tab">
+            <a href = "index.html">home</a>
+            <a href = "food.html">food</a>
+            <a href = "opinions.html">opinions</a>
+            <a href = "magical creatures.html">magical creatures</a>
+            <a href = "games.html">games</a>
+        </div>
+        <h1>click me!</h1>
+        <h3 id="one">my clicks 0 </h3>
+        <button onclick="addOne()" style="background-color: rgb(235, 203, 125); width: 200px; height: 150px;">CLICK ME</button>
+        <button onclick="upgrade()" style="background-color: rgb(235, 203, 125); width: 200px; height: 150px;">CLICK ME</button>
+        <h1>This is my Quiz Game. Git it right.</h1>\
+        <h3>Who is the mane cariter of my story?</h3>
+        <button onclick="wrong(this)">Alex</button>
+        <button onclick="wrong(this)">Jacklen</button>
+        <button onclick="wrong(this)">Max</button>
+        <button onclick="right(this)">Cat</button>
+        <button onclick="wrong(this)">Danyole</button>
+        <h3>What species is Danyole</h3>
+        <button onclick="wrong(this)">Elfe</button>
+        <button onclick="right(this)">Merman</button>
+        <button onclick="wrong(this)">Winged</button>
+        <button onclick="wrong(this)">Dragonmorph</button>
+        <button onclick="wrong(this)">Forest Creature</button>
+        <h3>who is the first to convince there species to stop fighting</h3>
+        <button onclick="right(this)">Alex</button>
+        <button onclick="wrong(this)">Jacklen</button>
+        <button onclick="wrong(this)">Max</button>
+        <button onclick="wrong(this)">Cat</button>
+        <button onclick="wrong(this)">Danyole</button>
+        <h3>Who did Alex convince to oppen up to him?</h3>
+        <button onclick="wrong(this)">Alex</button>
+        <button onclick="wrong(this)">Jacklen</button>
+        <button onclick="right(this)">Max</button>
+        <button onclick="wrong(this)">Cat</button>
+        <button onclick="wrong(this)">Danyole</button>
+        <h3 id = "counter">Score: 0</h3>
+    </body>
+</html>

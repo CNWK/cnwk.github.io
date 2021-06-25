@@ -1,0 +1,28 @@
+ body{
+ background-color: plum;
+ color: #4c5b75;
+ text-align: left;
+ }
+
+ a{
+    color: red;
+    border: 2px black;
+    padding: 10 px;
+    margin: 5px;
+}
+ul{
+    list-style-position:inside;
+}
+ol{
+    list-style-position:inside;
+}
+td, th{
+    border: 2px black;
+    padding: 4px;
+}
+.tab{
+    background-color: rgb(189, 108, 108);
+}
+.tab a:hover{
+    background-color: cadetblue;
+}
