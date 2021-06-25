@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>clicker game</title>
+        <link href = "style.css" rel = "stylesheet" type="text/css">
+    </head>
+    <script>
+        var click = 0;
+        var points = 9999999999999999999999999999999999999999999999999999999999999999999999;
+        function addOne(){
+           click+=points;
+           document.getElementById("one").innerHTML = "my clicks: " +  click;
+        }
+        function upgrade(){
+            if(click>10){
+                 points+=5;
+            }
+        }
+    </script>
+    <script>
+         var score = 0;
+         function right(elem){
+             elem.style.backgroundColor= "green";
+             score+=1;
+             document.getElementById("counter").innerHTML("score: " + score);
+         }
+         function wrong(elem){
+             elem.style.backgroundColor= "red";
+             score-=1;
+             document.getElementById("counter").innerHTML("score: " + score);
+         }
+    </script>
+    <body>
+        <div>
+            <a href = "index.html">home</a>
+            <a href = "food.html">food</a>
+            <a href="opinions.html">opinions</a>
+            <a href="hobbys.html">hobbys</a>
+            <a href="games.html">game</a>
+        </div>
+        <h1>this is a clicker game click the button.></h1>
+        <h3 id="one">my clicks: 0 </h3>
+        <button onclick="addOne()" style="background-color:red">CLICK ME</button>
+        <button onclick="upgrade()" style="background-color:red">UPGRADE</button>
+        <h1>this is my quiz game.get it right</h1>
+        <h3>what is prestons favorite color</h3>
+        <button onclick="wrong(this)">red</button>
+        <button onclick="wrong(this)">blue</button>
+        <button onclick="wrong(this)">green</button>
+        <button onclick="right(this)">pink</button>
+        <h3>whats prestons favorite jojo character</h3>
+        <button onclick="wrong(this)">jotaro</button>
+        <button onclick="right(this)">kakyoin</button>
+        <button onclick="wrong(this)">kira</button>
+        <button onclick="wrong(this)">giorno</button>
+        <h3>what is prestons favorite game</h3>
+        <button onclick="wrong(this)">halo</button>
+        <button onclick="wrong(this)">roblox</button>
+        <button onclick="right(this)">pokemon</button>
+        <button onclick="wrong(this)">call of duty</button>
+        <h3 id ="counter">score 0</h3>
+    </body>   
+</html>
