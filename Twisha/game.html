@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HEHE>:)</title>
+        <link href = "style.css" rel="stylesheet" type = "text/css">
+    </head>
+    <script>
+        var HEHE = 0;
+        var Tokens = 1;
+        function addOne(){
+            HEHE = HEHE + Tokens;
+            document.getElementById("one").innerHTML = "Clicks （＾∀＾●）ﾉｼ" + HEHE;
+
+        }
+        function upgrade(){
+            if(HEHE>10){
+                Tokens = 11;
+            }
+        }
+    </script>
+    <script>
+        var score = 0
+        function right(elem){
+            elem.style.backgroundColor= "lightcoral"
+            score+=100;
+            document.getElementById("counter").innerHTML = "Score: " + score;
+        }
+        function wrong(elem){
+            elem.style.backgroundColor= "darkred"
+            score-=100;
+            document.getElementById("counter").innerHTML = "Score: " + score;
+        }
+    </script>
+    <body>
+        <div class="tab">
+            <a href = "index.html">Home Page §(*￣▽￣*)§</a>
+            <a href = "food.html">Food Page (○｀ 3′○)</a>
+            <a href = "opinionsssssssssss.html">Opinion Page ο(=•ω＜=)ρ⌒☆</a>
+            <a href = "hi.html">Hobby Page ( •̀ ω •́ )✧</a>
+            <a href = "game.html">Game(s)! *★,°*:.☆(￣▽￣)/$:*.°★* 。</a>
+        </div>
+        <h1>This is a clicker game, click the screen \(￣︶￣*\))</h1>
+        <h3 id= "one">Clicks （＾∀＾●）ﾉｼ:0</h3>
+        <button onclick="addOne()" style="background-color: lightcoral; width: 150px; height: 150px;">Click Me! o(*°▽°*)o</button>
+        <button onclick="upgrade()" style="background-color: lightcoral; width: 150px; height: 150px;">Click Me! o(*°▽°*)o</button>
+        <h1>This is a quiz about me,pink means right dark red means wrong, Good Luck! ♪(´▽｀) (ps: you can click more than 1)</h1>
+        <h2>What is my favorite fruit?</h2>
+        <button onclick="right(this)">Grapes</button>
+        <button onclick="wrong(this)">Papaya</button>
+        <button onclick="wrong(this)">Guava</button>
+        <h2>What is my favorite fruit?</h2>
+        <button onclick="wrong(this)">Grapes</button>
+        <button onclick="right(this)">Papaya</button>
+        <button onclick="wrong(this)">Guava</button>
+        <h2>What is my favorite fruit?</h2>
+        <button onclick="wrong(this)">Grapes</button>
+        <button onclick="wrong(this)">Papaya</button>
+        <button onclick="right(this)">Guava</button>
+        <h3 id = "counter">Score: 0</h3>
+    </body>
+</html>
