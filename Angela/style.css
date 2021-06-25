@@ -1,0 +1,39 @@
+body{
+    background-color: rgb(38, 0, 255);
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+a{
+    color:#fffafa;
+    border: 1px solid rgb(0, 0, 0);
+    padding: 10px ;
+    margin: 5px ;
+    border-radius: 4px
+}
+ul{
+    list-style-position: inside;
+    }
+ol{
+    list-style-position:inside;
+    }
+table{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: rgb(0, 0, 0);
+}
+td, th{
+    border: 2px solid black;
+    padding: 4px;
+}
+.tab a{
+    background-color: rgb(0, 0, 0);
+}
+.tab a:hover{
+    background-color: honeydew;
+}
+#s .tab a{
+    background-color: rgb(0, 0, 0);
+}
+#s .tab a:hover{
+    background-color: rgb(255, 246, 246);
+}
