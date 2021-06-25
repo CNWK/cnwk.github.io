@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>clicker game</title>
+        
+    </head>
+    <script>
+        var clicks=0;
+        var points=1;
+        function addone(){
+            clicks=clicks + points;
+
+
+document.getElementById("trash").innerHTML = "My Clicks: " + clicks;
+        }
+        function upgrade(){
+if (clicks>10){
+points = 50}}
+    </script>
+    <script>
+var score = 0;
+function right(elem){
+    elem.style.backgroundColor= "green"
+    Score+=1;
+    document.getElementById("trash").innerHTML("score: " + score)
+}
+function wrong(elem){
+    elem.style.backgroundColor= "red";
+    Score-=1;
+    document.getElementById("trash").innerHTML("score: " + score)
+}
+    </script>
+    <body>
+        <a href="index.html">home</a>
+    <a href ="food.html">foood</a>
+    <a href ="opinions.html" >opinions</a><link href = "style.css" rel="stylesheet" type="text/css">
+    <a href ="hobbys.html">hobbys</a>
+    <a href ="games.html">hobbys</a>
+    <h1>this is a clicker game,Click on the button</h1>
+    <h2 id="trash">my clicks:0</h2>
+    <button onclick="addone()"style="background-color: peachpuff; width: 200 px; height:150 px"></button>
+    <button onclick="upgrade()" style="background-color:peachpuff;width:200px height,150px"></button>
+    <h1>this is my quiz. get it right,or else...</h1>
+<h3>what is conner's favirote sport</h3>
+  <button onclick="wrong(this)">hockey</button>
+  <button onclick="right(this)">basketball</button>
+  <button onclick="wrong(this)">nothing</button>
+<h4>who is the worst player on the nets?</h4>
+<button onclick="wrong (this)">joe harris</button>
+<button onclick="wrong(this)">kyrie irving</button>
+<button onclick="right(this)">james harden</button>
+<h5>what is the most popular video game?</h5>
+<button onclick="right(this)">call of duty</button>
+<button onclick="wrong(this)">roblox</button>
+<minecraft</button>
+<h6>in the us,what is called "america's pastime"</h6>
+<button onclick="wrong (this)">hockey</button>
+<button onclick="wrong (this)">football</button>
+<button onclick="right(this)">baseball</button>
+<h3 id = "trash">Score: 0</h3>
+    </body>
+</html>
