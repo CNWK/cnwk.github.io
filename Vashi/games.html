@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Vashi's webbite🍪: Clicker Game</title>
+        <link href="style3.css" rel="stylesheet" type="text/css">
+    </head>
+    <script>
+        var clicks = 1;
+        var points = 1;
+        function addOne(){
+            clicks=clicks+points;
+            document.getElementById("one").innerHTML="My Clicks:" + clicks;
+        }
+        function upgrade(){
+            if(clicks>10){
+                points = 5;
+            }
+             
+        }
+    </script>
+    <script>
+        var score = 0;
+        function right(elem){
+            elem.style.backgroundColor= "green";
+            score+=1;
+            document.getElementById("counter").innerHTML="Score: " + score;
+
+        }
+        function wrong(elem){
+            elem.style.backgroundColor= "red";
+            score-=1;
+            document.getElementById("counter").innerHTML="Score: " + score;
+
+        }
+    </script>
+    <body style="background-color:tomato;">
+        <div class="tab">
+            <a href="index.html">Home🏠 </a>
+            <a href="food.html" target="_"> Food🍽</a>
+            <a href= "opinions.html" target="_">Opinions💬</a>
+            <a href= "hobbies.html" target="_">Hobbies📚</a>
+            <a href= "games.html" target="_">Games🎮</a>
+        </div>
+        <h1>This is a Clicker Game. Click on The Button</h1>
+        <h3 id="one">My Clicks: 0</h3>
+        <button onclick="addOne()" style="background-color: thistle; width:200px; height: 150px; font-size:xx-large; font-family:'Courier New', Courier, monospace; border-radius: 50px;" >Click Me!</button>
+        <button onclick="upgrade()" style="background-color:lightslategray; width:200px; height: 150px; font-size:xx-large; font-family:'Courier New', Courier, monospace; border-radius: 50px;" >Upgrade!</button>
+        <h1>This is my Quiz Game. Get it Right.</h1>
+        <h3>What is My favorite TexMex Food?</h3>
+        <button onclick="wrong(this)">Beef Tacos</button>
+        <button onclick="right(this)"> Veg Tacos</button>
+        <button onclick="wrong(this)">Tortilla Tacos</button>
+        <h3>What is My least favorite Fusioned Food?</h3>
+        <button onclick="wrong(this)">Broccoli Tacos</button>
+        <button onclick="wrong(this)"> Bean Ice cream</button>
+        <button onclick="right(this)">Taco Ice Cream</button>
+        <h3>Who is the Current best NBA player</h3>
+        <button onclick="right(this)">Nikola Jokic</button>
+        <button onclick="wrong(this)"> Stephen Curry</button>
+        <button onclick="wrong(this)">James Harden</button>
+        <h3 id="counter">Score: 0</h3>
+    </body>
+</html>
