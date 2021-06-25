@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+        <head>
+            <title>Cilcker game </title>
+             <link href = "style.css" rel="stylesheet" type="text/css">
+        </head>
+        <script>
+            var click=0;
+            var points = 1;
+            function addOne(){
+                clicks= clicks + points; 
+                document.getElementById("fire").innerHTML= "my clicks: " + click;
+                
+            }
+            function upgrade(){
+                if(click> 10){
+                    points = 5;
+                }
+            }
+        </script>
+         <script>
+            var score = 0;
+        function rigth(elem){
+            elem.style.backgroundColor="green";
+        score+=1;
+        document.getElementById("counter").innerHTML = "Score: " + score;
+        }
+        function wrong(elem){
+            elem.style.backgroundColor="red";
+        score-=1;
+        document.getElementById("counter").innerHTML= "Score: " + score;
+        }
+         </script> 
+        <body>
+            <div class="tab"> 
+               > <a href="index.html">Home</a>
+                <a href="food.html">Food</a>
+                <a href="opinions.html">Opinions</a>
+                <a href="hobby.html">hobby</a>
+                <a href="game."html>game</a
+            </div>
+            <h1>This is a Cilcker game. Click on the button. </h1>
+            <h3 id="fire">my click: 0</h3>
+            <button onclick="addOne()" style="background-color: rgb(0, 17, 255); width: 200px; height:150">Click me</button>
+            <button onclick="addOne()" style="background-color: rgb(0, 17, 255); width: 200px; height:150">Click me</button>
+            <h1>This is my Ouiz game. get it rigth </h1>
+            <h3>what is my Favorite  color?</h3>
+            <button onclick="wrong(this)">green</button>
+            <button onclick="rigth(this)">black</button> 
+            <button onclick="wrong(this)">[red</button> 
+            <h3>what is my Favorite book</h3>
+            <button onclick="wrong(this)">buley</button>
+            <button onclick="rigth(this)">fast and furious</button>
+            <button onclick="wrong(this)">Power-Rangers-Beast-Morphers</button>
+            <h3 id="counter"> Score :0</h3>
+
+
+
+        </body>
+</html>
