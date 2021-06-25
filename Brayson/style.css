@@ -1,0 +1,32 @@
+body{
+    background-color: darkgrey;
+    color:gold;
+text-align: center;
+}
+
+a{
+    color:coral;
+    border: 2px;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+}
+ol{
+list-style-position:inside
+}
+table{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: crimson;
+
+}
+td, th{
+       border: 2px solid red;
+       padding: 2px;
+}
+.tab a{
+background-color: salmon;
+
+}
+.tab a:hover{
+    background-color: skyblue;
+}

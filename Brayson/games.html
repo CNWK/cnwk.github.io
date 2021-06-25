@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html> 
+      <head>
+<title> clicker game </title>
+      </head>
+<body>
+    <div class= "tab" >
+        <a href = "index.html" > main page </a>
+            <a href = "food.html" > page 2 </a>
+                <a href = "opinions.html" >page 3 </a>
+                   <a href ="hobbies.html" > page 4 </a>
+                    <a href = "games.html" >  this page   </a>
+                </div>
+                <h1 style = "color: coral;">this is a clicker game click on the button </h1>
+<script>   
+var clicks = 0;
+var points =1;
+function addOne(){
+clicks = clicks + points;
+document.getElementById("E").innerHTML = "my clicks: " + clicks;
+}
+function upgrade(){
+points=(clicks/10 +1)*5;
+}
+    
+
+</script>
+<script>
+var score = 0;
+function right(elem){
+elem.style.backgroundColor= "green";
+score+=1;
+document.getElementById("counter").innerHTML="score:   " + score;
+}
+function wrong(elem){
+elem.style.backgroundColor= "red";
+score-=1;
+document.getElementById("counter").innerHTML="score:   " + score;
+}
+</script>
+<h2 id="E"> my clicks: 0 </h2>
+<button onclick="addOne()" style="color: red; width: 200px; height: 150px; "> CLICK ME!!!</button>
+<button onclick="upgrade()" style="color: red; width: 200px; height: 150px; ">  </button>
+<h1>this is me quiz game get it right</h1>
+<h2>what is my favorite color</h2>
+<button onclick="wrong(this)"> blue</button>
+<button onclick="right(this)"> red</button>
+<button onclick="wrong(this)"> black</button>
+<h2>what is my favorite game</h2>
+<button onclick="right(this)"> minecraft</button>
+<button onclick="wrong(this)"> roblox</button>
+<button onclick="wrong(this)"> mc dungeons</button>
+<h3>what is my favorite tv show</h3>
+<button onclick="wrong(this)"> adventure time </button>
+<button onclick="wrong(this)"> regular show</button>
+<button onclick="right(this)"> ninjago </button>
+
+<h3 id = "counter">score: 0</h3>
+
+</body>
+<link href = "style.css" rel= "stylesheet" type = "text/css">
+
+</html>
