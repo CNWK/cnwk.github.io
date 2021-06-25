@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Games</title>
+        <link href = "style.css" rel="stylesheet" type= "text/css">
+    </head>
+    <script>
+        var clicks = 1;
+        var points = 1;
+        function addOne(){
+            clicks = clicks + points;
+            document.getElementById("one").innerHTML = "My Clicks: "+ clicks;
+        }
+        function upgrade(){
+            if( clicks>10){
+                points = 5;
+            }
+
+        }        
+    </script>
+    <script>
+        var score = 0;
+        function right(elem){
+            elem.style.backgroundColor="green";
+            score+=1;
+            document.getElementById("counter").innerHTML="score:" + score;
+        }
+        function wrong(elem){
+            elem.style.backgroundColor="red";
+            score-=1;
+            document.getElementById("counter").innerHTML("score:" + score)
+        }
+    </script>
+    <body>
+        <div class="tab">
+            <a href = "index.html">Home</a>
+            <a href = "food.html">Favirote Food</a>
+            <a href = "opinions.html">My Opinions</a>
+            <a href = "Hobbies.html">My Hobbies</a>
+            <a href = "games.html"> Games</a>
+         </div>
+         <h1>This is a clicker game. Click on the button.</h1>
+         <h3 id="one">Clicks: 0 </h3>
+         <button onclick="addOne()" style="background-color:mintcream; width: 200px; height: 150px;">Click me or else</button>
+         <button onclick="upgrade()" style="background-color:mintcream; width: 200px; height: 150px;">upgrade</button>
+         <h1>This is My Quiz Game. Get it right or else.</h1>
+         <h3>What is Logan's favirote dinosaur</h3>
+         <button onclick="wrong(this)">T.rex</button>
+         <button onclick="wrong(this)">Argentinosaurus</button>
+         <button onclick="wrong(this)">Velociraptor</button>
+         <button onclick="right(this)">Baryonyx</button>
+         <h3>What was the biggest dinosaur ever discovered</h3>
+         <button onclick="wrong(this)">Spinosaurus</button>
+         <button onclick="right(this)">Argentinosaurus</button>
+         <button onclick="wrong(this)">blue whale</button>
+         <button onclick="wrong(this)">Ceratosaurus</button>
+         <h3>Are dolphins color blind</h3>
+         <button onclick="wrong(this)">no</button>
+         <button onclick="right(this)">yes</button>
+         <h3>What is Logan's favirote animal</h3>
+         <button onclick="right(this)">gray wolf</button>
+         <button onclick="wrong(this)">poison dart frog</button>
+         <button onclick="wrong(this)">orca/killer whale</button>
+         <button onclick="wrong(this)">House cat</button>
+         <h3>What is the dumbest animal in Logan's opinion</h3>
+         <button onclick="wrong(this)">squid</button>
+         <button onclick="right(this)">sloth</button>
+         <button onclick="wrong(this)">misquito</button>
+         <button onclick="wrong(this)">duck</button>
+        <h3 id = "counter">Score: 0</h3>
+
+    </body>
+</html>

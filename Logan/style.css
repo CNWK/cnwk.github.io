@@ -1,0 +1,33 @@
+body{
+    background-color:lime;
+    color:black;
+    text-align: center;
+}
+
+a{
+    color:midnightblue;
+    border: 2px solid black;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
+}
+ul{
+    list-style-position:inside;
+}
+ol{
+    list-style-position:inside;
+}
+table{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color:blue;
+}
+td, th{
+    border: 2px solid black;
+    padding: 4px;
+}
+.tab a {
+    background-color: floralwhite;
+}
+.tab a:hover{
+    background-color:rgb(120, 204, 219);
+}
