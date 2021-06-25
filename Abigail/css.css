@@ -1,0 +1,45 @@
+body{
+    background-color: rgb(77,44,137);
+    color: rgb(214,244,255);
+    font-family: cursive;
+    text-align: center;
+}
+a{
+    color: rgb(214,244,255);
+}
+img{
+    border: 7px solid rgb(97, 71, 156);
+}
+ul{
+    list-style-position: inside;
+}
+ol{
+    list-style-position: inside;
+}
+td, th{
+    border: 1px solid rgb(214,244,255);
+    padding: 5px;
+}
+.tab{
+    color: rgb(214, 244, 255);font-size: 30px;
+    margin: 10px;
+    border: 2px solid rgb(214,244,255);
+}
+.tab a:hover{
+    background-color: rgb(0, 187, 255);
+    color: rgb(155, 228, 255);
+}
+.tab a{
+    border: 2px solid rgb(214,244,255);
+}
+table{
+    align-self: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+button{
+    color: rgb(214, 244, 255);
+    background-color: rgb(77,44,137);
+    width: 100px; 
+    height: 25px;
+}

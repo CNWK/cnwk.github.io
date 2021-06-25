@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Clicker Game</title>
+        <link href="css.css" rel="stylesheet">
+    </head>
+    <script>
+        var click=0;
+        var point=1;
+        function addOne(){
+            click=click+point;
+            document.getElementById("one").innerHTML="Score:"+click;
+            if(click>1000000){
+                alert("You Won!");
+            }
+        }
+        function upgrade(){
+            if(click>20){
+                point=10;
+            }
+            if(click>100){
+                point=50
+            }
+            if(click>500){
+                point=100
+            }
+            if(click>1500){
+                point=500
+            }
+            if(click>5000){
+                point=1000
+            }
+            if(click>10000){
+                point=2500
+            }
+            if(click>20000){
+                point=5000
+            }
+            if(click>50000){
+                point=10000
+            }
+            if(click>100000){
+                point=20000
+            }
+            if(click>200000){
+                point=50000
+            }
+        }
+    </script>
+    <script>
+        var score=0;
+        function right(elem){
+            elem.style.backgroundColor="green"
+            score+=1
+            document.getElementById("counter").innerHTML="Score:"+score;
+        }
+        function wrong(elem){
+            elem.style.backgroundColor="red"
+            score-=1
+            document.getElementById("counter").innerHTML="Score:"+score;
+        }
+    </script>
+    <body>
+        <div class="tab">
+            <a href="index.html">Home</a>
+            <a href="encyclopedia.html">Creator</a>
+            <a href="opinion.html">Wish</a>
+            <a href="lorepage.html">Lore Encyclopedia</a>
+            <a href="clickergame.html">Games</a>
+        </div>
+        <h1>This is a clicker game. Click on the button.</h1>
+        <h3 id="one">Score: 0</h3>
+        <button onClick="addOne()">Click this!</button>
+        <button onClick="upgrade()">Upgrade</button>
+        <h1>The Quiz Game</h1>
+        <h3>Easy 1: Who created the Lorebreaker?</h3>
+        <button onClick="wrong(this)">Yellow</button>
+        <button onClick="right(this)" style="width: 200px;">StormcatcherHere</button>
+        <button onClick="wrong(this)">Red</button>
+        <h3>Easy 2: Who made this website?</h3>
+        <button onClick="wrong(this)" style="width: 200px;">StormcatcherHere</button>
+        <button onClick="right(this)" style="width: 150px;">TsunamiVoid</button>
+        <button onClick="wrong(this)">Spaghetti</button>
+        <h3>Easy 3: Who is the Lorebreaker?</h3>
+        <button onClick="wrong(this)">Rngness</button>
+        <button onClick="wrong(this)">Avarice</button>
+        <button onClick="right(this)">Wish</button>
+        <h3>Medium 1: Who is Skyfrost?</h3>
+        <button onClick="wrong(this)">Originally Red</button>
+        <button onClick="wrong(this)" style= "width: 125px;">Originally Arcane</button>
+        <button onClick="right(this)" style="width: 250px;">Originally StormcatcherHere</button>
+        <h3>Medium 2: Does the Lorebreaker have any offspring?</h3>
+        <button onClick="wrong(this)">No</button>
+        <button onClick="wrong(this)">Yes</button>
+        <button onClick="right(this)">Yes,5</button>
+        <h3>Medium 3: Who is UserUserson?</h3>
+        <button onClick="wrong(this)" style="width: 125px;">Regular Player</button>
+        <button onClick="right(this)" style="width: 150px;">Impocalypse Starter</button>
+        <button onClick="wrong(this)">Just a Player</button>
+        <h3>Hard 1: Did all Eleven Deities fall?</h3>
+        <button onClick="wrong(this)">Yes</button>
+        <button onClick="wrong(this)">No</button>
+        <button onClick="right(this)" style="width: 125px;">No, 1 survived</button>
+        <h3>Hard 2: Who is Naomi?</h3>
+        <button onClick="wrong(this)" style="width: 125px;">Helper of Wish</button>
+        <button onClick="right(this)" style="width: 200px;">Glitch Queen, Wish's Helper</button>
+        <button onClick="wrong(this)">Glitch Queen</button>
+        <h3>Hard 3: Who is Avarice?</h3>
+        <button onClick="right(this)" style="width: 200px;">The Dragon at Avarice's Altar</button>
+        <button onClick="wrong(this)">Just a name</button>
+        <button onClick="wrong(this)">RNG</button>
+        <h3>Impossible 1: Has anyone created lore based on the Lorebreaker's Lore?</h3>
+        <button onClick="wrong(this)">Yes</button>
+        <button onClick="wrong(this)">No</button>
+        <button onClick="right(this)" style="width: 175px;">Yes, the website owner</button>
+        <h3 id="counter">Score: 0</h3>
+        <h3>This is a Glitch 1</h3>
+        <button onClick="wrong(this)"><a href="secr.html">Press</button>
+        <button onClick="wrong(this)"><a href="secre.html">Press</button>
+        <button onClick="right(this)"><a href="secret.html">Press</a></button>
+</html>
