@@ -1,0 +1,28 @@
+body{
+    background-color: rgb(243, 56, 56);
+    color: rgb(53, 53, 184);
+    text-align: center;
+}
+
+a{
+    color: ivory;
+    font-size: 20px;
+    border: 2px solid lavenderblush;
+    margin:10px
+}
+
+img{
+    border: 2px solid black;
+}
+ul, ol{
+    list-style-position: inside;
+}
+td, th{
+    border: 2px solid black;
+}
+.tab a{
+    background-color: lightgrey;
+}
+.tab a:hover{
+    background-color: lime;
+}
