@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Clicker Game</title>
+        <link href = "style.css" rel="stylesheet" type = "text/css">
+    </head>
+  
+    <body>
+        <script>
+            var clicks = 0;
+            function addOne(){
+                clicks+=1;
+                document.getElemementById("one").innerHTML = "My Clicks: " + clicks;
+            }
+        </script>
+        <div class="tab">
+            <a href = "index.html">Home</a>
+            <a href = "food.html">Food!! :D</a>
+            <a href = "opinions.html">Opinions</a>
+            <a href = "games.html">Games</a>
+        </div>
+        <h1>This is a clicker game. Click on the button.</h1>
+        <h3 id="one">My Clicks: 0 </h3>
+        <button onclick="addOne()" style="background-color: peachpuff; width: 200px; height: 150px;">CLICK ME!</button>
+    </body>
+</html>
