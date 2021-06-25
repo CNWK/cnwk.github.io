@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>clicker game</title>
+    <link href="DOMTROM style.css" rel="stylesheet" type ="text/css">
+</head>
+<script>
+    var clicks=0;
+    var points =1;
+    function addone(){
+        clicks=clicks+points;
+        document.getElementById("one").innerHTML ="my clicks:" + clicks;
+    }
+    function upgrade(){
+       if(clicks>10){
+        points=5;
+       }
+}
+</script>
+<script>
+    var score = 0;
+    function right(elem){
+        elem.style.backgroundColor= "green";
+        score+=1;
+        document.getElementById("counter").innerHTML = "score: " + score;
+    }
+    function wrong(elem){
+        elem.style.backgroundColor= "red";
+        score-=1;
+        document.getElementById("counter").innerHTML = "score: " + score;
+    }
+</script>
+<body>
+    <div class="tab">
+        <a href="index.html">home</a>
+        <a href="food.html">food</a>
+        <a href ="DOMTROMS opinoins.html">opinons of Dominic</a>
+        <a href="games.html">games</a>
+    </div>  
+    <h1>this button goes to a clicker game</h1> 
+    <h3 id = "one"> my clicks: 0 </h3>
+    <button onclick="addone()" style="background-color: red;width: 200px;">click me</button>
+    <button onclick="upgrade()" style="background-color: red;width: 200px;">click me</button>
+
+
+
+
+    
+    <h1>this is a quiz</h1>
+    <h3>whats my favrite color</h3>
+    <button onclick="wrong(this)">red</button>
+    <button onclick="wrong(this)">green</button>
+    <button onclick="right(this)">blue</button>
+    <h3>whats my favrite food</h3>
+    <button onclick="wrong(this)">pizza</button>
+    <button onclick="right(this)">sushi</button>
+    <button onclick="wrong(this)">chicken</button>
+    <h3>whos my favrite basketballplayer</h3>
+    <button onclick="wrong(this)">michel jorden</button>
+    <button onclick="right(this)">kevin durant</button>
+    <button onclick="wrong(this)">james harden</button>
+        <br>
+        <h3>whats my favrite video game</h3>
+        <button onclick="right(this)">mlb the show</button>
+        <button onclick="wrong(this)">nhl21</button>
+        <button onclick="wrong(this)">roket leauge</button>
+        <h3>what are my favrite type of shoes</h3>
+        <button onclick="wrong(this)">hardens</button>
+        <button onclick="wrong(this)">jordens</button>
+        <button onclick="right(this)">kyries</button>
+        <br>
+        <h3>what is my favrite game on roblox</h3>
+        <button onclick="wrong(this)">jailbreak</button>
+        <button onclick="wrong(this)">arsenal</button>
+        <button onclick="right(this)">pilot traning flight simulater</button>
+        <br>
+        <h3>what type of computer do i have</h3>
+        <button onclick="wrong(this)">microsoft</button>
+        <button onclick="wrong(this)">dell</button>
+        <button onclick="right(this)"> chromebook</button>
+        <h3 id = "counter">points 0</h3>
+
+</body>
+</html>

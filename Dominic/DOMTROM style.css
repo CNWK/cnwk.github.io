@@ -1,0 +1,25 @@
+body{
+    background-color: black;
+    color: red;
+    
+}
+
+a{
+    color: red;
+}
+
+img{
+    border: 2px solid red;
+    margin-left: 10px;
+}table{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+td, th{
+    border: 2px solid red;
+}
+.tab a{
+    background-color: black;
+}
+.tab a :hover{
+    background-color: black;
+}
