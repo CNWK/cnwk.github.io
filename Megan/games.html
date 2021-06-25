@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <Title>clicker/Quiz</Title>
+        <link href="style.css"rel="stylesheet" type="text/css">
+    </head>
+    <script>
+        var click = 0;
+        var points = 1;
+        function addOne(){
+            click = click + points;
+            document.getElementById("one").innerHTML ="my clicks:"  + click;
+        }
+        function upgrade(){
+            if(click>10){
+                points = 5;
+            }
+        }
+    </script>
+    <script>
+        var score = 0;
+    function right (elem){
+        elem.style.backgroundColor = "green";
+        score+=1;
+        document.getElementById("counter").innerHTML= "score : " + score;
+
+    }
+    function wrong (elem){
+        elem.style.backgroundColor = "red";
+        score-=1;
+        document.getElementById("counter").innerHTML="score : " + score
+
+    }
+    </script>
+
+
+    <Body>
+        <div class="tab">
+            <a href="index.html">Home</a>
+            <a href="food.html"> megs kichen</a>
+            <a href="opions.html">About Me</a>
+            <a href="hobbies.html">my hobbies</a>
+            <a href="games.html">clicker</a>
+        </div>
+        <h1>!clicker!</h1>
+        <h3 id="one">my clicks: o</h3>
+        <button onclick="addOne()"  style="background-color: mediumpurple;width: 200 px; height:150px;">click me! button</button>
+        <button onclick="upgrade()"  style="background-color: mediumpurple;width: 200 px; height:150px;">click me! button</button> 
+        <h1>this is my Quiz start to learn about me!!!</h1>
+        <h3>my fav amimal???</h3>
+        <button onclick="wrong(this)">Bird</button>
+        <button onclick="right(this)">horse</button>
+        <h3>my fav roblox game???</h3>
+        <button onclick="right(this)">roleplay</button>
+        <button onclick="wrong(this)">tycoons</button>
+        <h3>my dream job???</h3>
+        <button onclick="right(this)">designer</button>
+        <button onclick="wrong(this)">vet</button>
+        <h3 id="counter">Score: 0</h3>
+    </Body>
+</html>
