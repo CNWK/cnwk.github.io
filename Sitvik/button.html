@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>button</title>
+        <link href="style.css" rel="stylesheet" type="text/css">  
+    </head>
+    <script>
+        var click=0;
+        function addOne(){
+            click+=10;
+            document.getElementById("one").innerHTML = "Clicks: " + click;
+        }
+    </script>
+    <body>
+        <div class="tabs">
+            <a href="index.html">home</a>
+            <a href="food.html">food</a>
+            <a href="button.html">button</a>
+            <a href="animal.html">animal</a>
+        </div>
+        <h1>CLICK THE BUTTON</h1>
+        <h3 id="one">Clicks: 0</h3>
+        <button onclick="addOne()">CLICK ME</button>
+    </body>
+</html>
