@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <title>my clicker game </title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <head>
+
+    </head>
+    <script>
+        var e = 0;
+        var points = 1;
+        function addone(){
+        e = e + points;
+        document.getElementById("1").innerHTML = "my e's:" +e; 
+        }
+        function upgrade(){
+            if(e>10){
+                points = 5;
+                if(e>50){
+                    points = 15;
+                    if(e>500){
+                        points =100;
+                        if(e>10000){
+                            points = 1000;
+                            if(e=30000){
+                                points = 50000;
+                                if(e=1000000){
+                                    points = 500000
+                                    if(e=5000000){
+                                      points = 10000000;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        
+    </script>
+    <script>
+        var score = 0;
+        function right(elem){
+            elem.style.backgroundColor="green";
+            score+=1;
+            Document.getElementById("counter").innerHTML("score: " + score)
+        }
+        var score = 0;
+        function wrong(elem){
+            elem.style.backgroundColor="red";
+            score+=1;
+            Document.getElementById("counter").innerHTML = "score: " + score
+        }
+    </script>
+    <body>
+        <div class="tab">
+            <a href="file:///C:/Users/coden/Documents/index.html%20ryan/index.html">home</a>
+            <a href="file:///C:/Users/coden/Documents/index.html%20ryan/food.html.html">food</a>
+            <a href="file:///C:/Users/coden/Documents/index.html%20ryan/opinions.html" >opinions</a>
+            <a href="file:///C:/Users/coden/Documents/index.html%20ryan/hobies.html" >hobies</a>
+        </div>
+        <h1>click on the button</h1>
+        <h1 id="1">e's: 0</h1>
+        <button onclick="addone()"  style="background-color: darkred; width: 400px; height: 200px;">click me</button>
+        <button onclick="upgrade()"  style="background-color: darkred; width: 400px; height: 200px;">upgrade</button>
+        <h1>this is my quiz GET IT RIGHT !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!</h1>
+        <h3>what is my favorite color</h3>
+        <button onclick="wrong(this)">green</button>
+        <button onclick="right(this)">red</button>
+        <button onclick="wrong(this)">blue</button>
+        <h3>what is my favorite activity</h3>
+        <button onclick="wrong(this)">guns ded</button>
+        <button onclick="right(this)">gaming</button>
+        <button onclick="wrong(this)">jumping</button>
+        <h3>what is my favoritte food</h3>
+        <button onclick="right(this)">poo poo</button>
+        <button onclick="wrong(this)">fajita</button>
+        <button onclick="wrong(this)">raw chicken</button>
+        <h3 id="counter">score: 0</h3>
+    </body>
+</html>
