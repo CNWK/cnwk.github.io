@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Jack</title>
+
+        <link href = "style.css" rel = "stylesheet" type = "text/css">
+     </head>
+     
+    <body>
+
+    <div class = "tab">
+            <a href = "index.html">Home</a>
+            <a href = "food.html">Food</a>
+            <a href = "awesomeness.html">Awesomeness</a>
+            <a href = "CBW.html">Choice Board Website</a>
+            <a href = "theGames.html">The Games</a>
+        </div>
+
+        <script>
+            var points = 0;
+            function addOne(){
+                points = points + 9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000;
+                document.getElementById("one").innerHTML = "My Clicks " + points;
+            }
+        </script>
+        <br><br><br>
+
+        <button onclick = "addOne()">Spam it!</button>
+        <h3 id = "one">My Clicks: 0</h3>
+
+        <script>
+            var score = 0;
+            function wrong(elem){
+                elem.style.backgroundColor = "red";
+                score--;
+                document.getElementById("two").innerHTML = "Score: "  + score;
+            }
+
+            function right(elem){
+                elem.style.backgroundColor = "green";
+                score++;
+                document.getElementById("two").innerHTML = "Score: "  + score;
+            }
+        </script>
+
+        <h2>Test</h2>
+        <h3>Easy - Who lives in a pineapple under the sea?</h3>
+
+        <button onclick = "wrong(this)">Breadboy Squarehead</button>
+        <button onclick = "right(this)">Spongebob Squarepants</button>
+        <button onclick = "wrong(this)">Dishsoap Pentaskirt</button>
+
+        <h3>Easy - What is the magic glove from Infinity War called?</h3>
+        
+        <button onclick = "wrong(this)">Golden Revolution</button>
+        <button onclick = "right(this)">Infinity Gauntlet</button>
+        <button onclick = "wrong(this)">Helping Hand</button>
+
+        <h3>Medium - Solve for x. <br> x - 4 + 2(-2x) = x/2 </h3>
+        
+        <button onclick = "right(this)">-8/7</button>
+        <button onclick = "wrong(this)">-7/8</button>
+        <button onclick = "wrong(this)">8/7</button>
+        <button onclick = "wrong(this)">7/8</button>
+        <button onclick = "wrong(this)">Henry</button>
+
+        <h3>Hard - The scientific name for the western gorilla is...</h3>
+
+        <button onclick = "wrong(this)">Simianus hapun</button>
+        <button onclick = "wrong(this)">Pan troglodytes</button>
+        <button onclick = "wrong(this)">Papio hamadryus</button>
+        <button onclick = "right(this)">Gorilla gorilla</button>
+
+        <h3>Unfair - In chapter 6 of the game "Shadow Fight 3", who do you fight as the second boss?</h3>
+
+        <button onclick = "wrong(this)">Shadow</button>
+        <button onclick = "wrong(this)">Shadow Mind</button>
+        <button onclick = "wrong(this)">Sarge</button>
+        <button onclick = "wrong(this)">Azuma the Feldsher</button>
+        <button onclick = "wrong(this)">Gizmo</button>
+        <button onclick = "wrong(this)">Bolo</button>
+        <button onclick = "wrong(this)">Xiang Tzu</button>
+        <button onclick = "right(this)">Queen Iolanda</button>
+        <button onclick = "wrong(this)">Marcus</button>
+        <button onclick = "wrong(this)">Jet</button>
+        <button onclick = "wrong(this)">Lynx</button>
+        
+
+
+        <h3 id = "two">Score: 0</h3>
+
+        
+
+
+
+    </body>
+</html>

@@ -1,0 +1,45 @@
+body{
+    background-color: mediumorchid;
+    font-size: 20px;color: dimgrey;
+    color: ghostwhite;
+    text-align: center
+}
+
+.tab  a:hover{
+    background-color: mediumpurple;
+}
+
+.tab a{
+    border: 2px solid black;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 8px;
+}
+
+ul, ol{
+    list-style-position: inside;
+}
+th, td{
+    border: 4px solid black;
+    padding: 7px
+}
+table{
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.jason{
+
+    list-style-position: outside;
+    text-align: left;
+}
+
+button{
+
+    background-color: violet;
+    width: 200px;
+    height: 200px;
+    border: 2px solid black;
+}
+
