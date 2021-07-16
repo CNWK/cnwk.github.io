@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>clicker arcade!</title>
+        <link href = "style.css" rel="stylesheet" type = "text/css">
+    </head>
+    <body>
+        <div class = "tab">
+            <a href="index.html">Home</a>
+            <a href="food.html"> food:)</a>
+            <a href = "opinions.html">preferences</a>
+            <a href="my own website!!!.html">board games</a>
+            <a href="clicker.html">games</a>
+        </div>
+        <script>
+            var points = 0;
+            function addOne(){
+                points = points + 1;
+                document.getElementById("one").innerHTML = "my Clicks: " + points;
+            }
+        </script>
+        <br>
+        <button onclick="addOne()">CLICK ME PLZ!!!!!!!!</button>
+        <h2 id= "one">My Clicks: 0</h2>
+        <script>
+            var score = 0;
+            function wrong(elem){
+                elem.style.backgroundColor = "red";
+                score--;
+                document.getElementById("two").innerHTML = "score: "+ score;
+            }
+            function right(elem){
+                elem.style.backgroundColor = "green";
+                score++;
+                document.getElementById("two").innerHTML = "score: "+ score;
+            }
+        </script>
+        <h1>cool quiz do good</h1>
+        <h4>what is my favorate color?</h4>
+                
+        <button onClick = "wrong(this)">sky blue</button>
+        <button onClick = "right(this)">royal blue</button>
+        <button onClick = "wrong(this)">navy blue</button>
+        <h4>what is my favorate food</h4>
+        <button onClick = "right(this)">cheese burger</button>
+        <button onClick = "wrong(this)">paint</button>
+        <button onClick = "right(this)">fries</button>
+        <h4>what is my favorate sport</h4>
+        <button onClick = "wrong(this)">basketball</button>
+        <button onClick = "right(this)">swimming</button>
+        <button onClick = "wrong(this)">hockey</button>
+        <h2 id= "two">score: 0</h2>
+    </body>
+</html>

@@ -1,0 +1,37 @@
+body{
+    background-color:rgb(251, 255, 0) ;
+    color:orangered;
+    text-align: center;
+    font-size: 20px;
+    font-family: cursive;
+}
+
+.tab a:hover{
+    background-color: rgb(85, 233, 27);
+}
+
+.tab a{
+    border: 2px double rgb(255, 0, 0);
+    padding: 7px;
+    margin: 8px;
+    border-radius: 8px;
+}
+ul, ol{
+    list-style-position: inside;
+}
+
+th, td{
+    border: 3px outset;
+    padding: 6px;
+}
+table{
+    margin-left: auto;
+    margin-right: auto;
+    background-color: cyan;
+}
+
+button{
+    background-color: deepskyblue;
+    width: 200px;
+    height: 150px;
+}
