@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <Head>
+        <title>Click to win</title>
+        <link href = "style.css" rel = "stylesheet" type = "text/css">
+    </Head>
+    <body style="font-family: cursive;"></body>
+    <div class = "tab">
+        <a href = "index.html">Home</a>
+        <a href = "Yes.html">Yes</a>
+        <a href="Opinions.html" >Im right, you're wrong.</a>
+        <a href = "Name.html" >Name</a>
+        <a href="Game.html" >Click to win</a>
+    </div>
+        <script>
+            var points = 0;
+            function addOne(){
+                points = points + 1;
+                document.getElementById("one").innerHTML = "My Clicks: " + points;
+            }
+        </script>
+        <br>
+        <button onclick="addOne()">Click</button>
+        <h2 id = "one">My clicks: 0</h2>
+        <script>
+            var score = 0;
+            function wrong(elem){
+                elem.style.backgroundColor = "red";
+                score--;
+                document.getElementById("two").innerhtml = "Score: " + score;
+            }
+            function right(elem){
+                elem.style.backgroundColor = "green";
+                score--;
+                document.getElementById("two").innerhtml = "Score: " + score;
+            }
+        </script>
+        <h1>A n s w e r</h1>
+        <h3>Guess what...</h3>
+        <button onclick="wrong(this)">No</button>
+        <button onclick="wrong(this)">Chicken butt</button>
+        <button onclick="right(this)">what</button>
+        <h3>What came first the Orange or the color Orange</h3>
+        <button onclick="wrong(this)">Orange</button>
+        <button onclick="right(this)">Orange</button>
+        <button onclick="wrong(this)">Both</button>
+        <h3>Whats 2 x 10 + 50 - 10 x 100</h3>
+        <button onclick="wrong(this)">8000</button>
+        <button onclick="right(this)">7000</button>
+        <button onclick="wrong(this)">800</button>
+        <h2 id = "two" >Score: 0</h2>
+    </body>
+</html>
