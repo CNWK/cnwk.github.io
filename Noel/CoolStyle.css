@@ -1,0 +1,42 @@
+body{
+    background-color: darkcyan;
+    color: black;
+    font-size: 30px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+}
+
+.tab a:hover{
+background-color: rgb(22, 204, 149);
+}
+
+.tab a{
+    background-color: goldenrod;  
+    border: 3px solid chartreuse;
+    padding: 8px;
+    margin: 10px;
+    border-radius: 8px;
+    text-align: center;
+}
+.tab{
+    text-align: center;
+}
+ul, ol {
+    list-style-position:  inside;
+}
+
+th, td{
+    border: 3px dashed black;
+    padding: 1px;
+}
+
+table{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+button{
+    background-color: rgba(114, 240, 30, 0.726);
+    width:250px;
+    height: 100px;
+}

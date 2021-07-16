@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Cool Game</title>
+        <link href = "CoolStyle.css" rel="stylesheet" type = "text/css">
+    </head>
+    <body>
+        <div class = "tab">
+            <a href = "index.html">Cool Home</a>
+            <a href = "coolFood.html">Cool Food</a> 
+            <a href = "humans are cool.html">Cool Stuff</a>
+            <a href = "CoolHumanStuff.html" >Cool Human Stuff</a>
+            <a href = "CoolGame.html" >Cool Game</a>
+          </div>
+          <br>
+          <script>
+              var points = 0;
+              function addOne(){
+                  points = points + 1;
+                  document.getElementById("one").innerHTML = "Points that have no real meaning but is still something that you want alot of for no apparent reason: " + points;
+                  
+              }
+          </script>
+          <button onclick="addOne()">CLICK ME!</button>
+          <h2 id = "one">Points that have no real meaning but is still something that you want alot of for no apparent reason: 0</h2>
+          <script>
+              var score = 0;
+             function wrong(elem){
+                elem.style.backgroundColor = "red";
+                score--;
+                document.getElementById("two").innerHTML = "your score: " + score;
+             }
+
+             function right(elem){
+                elem.style.backgroundColor = "green";
+                score++;
+                document.getElementById("two").innerHTML = "your score: " + score;
+             } 
+          </script>
+          <h2>Quiz game. If you don't get it right you are not cool.</h2>
+          <h3>Question 1: Are humans cool?</h3>
+          <button onclick = "right(this)">Yes</button>
+          <button onclick = "wrong(this)">No</button>
+          <button onclick = "wrong(this)">Maybe</button>
+          
+
+          <h3>Question 2: Is Pizza Cool?</h3>
+          <button onclick = "right(this)">Yes</button>
+          <button onclick = "wrong(this)">No</button>
+          <button onclick = "wrong(this)">Maybe</button>
+
+          <h3>Question 3:Are Inventions, Technology, and Minecraft cool?</h3>
+          <button onclick = "right(this)">Yes</button>
+          <button onclick = "wrong(this)">No</button>
+          <button onclick = "wrong(this)">Maybe</button>
+
+          <h3>Question 4: Are you cool?</h3>
+          <button onclick = "wrong(this)">Yes</button>
+          <button onclick = "right(this)">No</button>
+          <button onclick = "wrong(this)">Maybe</button>
+          <h2 id = "two">your score: 0</h2>
+    </body>
+</html>
