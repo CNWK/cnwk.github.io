@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Arcade</title>
+        <link href = "style.css" rel="stylesheet" type = "text/css">
+    </head>
+    <body>
+        <div class = "tab">
+        <a href="index.html">Homepage</a>
+       <a href="food.html"> My favorite food</a>
+       <a href="opninions.html"> Opinions</a>
+       <a href= "apple.html"> Different types of apples</a>
+       <a href= "games.html"> Arcade</a>
+    </div>
+    <script>
+         var points = 0;
+         function addOne(){
+             points = points + 1;
+             document.getElementById("one").innerHTML = "My CLicks:" + points;
+         }
+    </script>
+    <br>
+    <button onclick= "addOne()"> CLICK ME :)</button>
+    <h2 id = "one"> My Clicks: 0</h2>
+    <script>
+        var score = 0;
+        function wrong (elem){
+            elem.style.backgroundColor ="red";
+            score--;
+            document.getElementById("two").innerHTML = "Score: " + score;
+            
+
+        } function right (elem){
+            elem.style.backgroundColor ="green";
+            score++;
+            document.getElementById("two").innerHTML = "Score: " + score;
+        }
+    </script>
+       <h2> A random quiz!</h2>
+       <h3> Where does milk come from?</h3>
+       <button onclick = "wrong(this)"> Walmart</button>
+       <button onclick = "wrong(this)"> Dogs</button>
+       <button onclick = "right(this)"> Cows</button>
+      <div>
+       <h3> Are oranges fruit?</h3>
+       <button onclick = "wrong(this)"> No</button>
+       <button onclick = "right(this)"> Yes</button>
+       </div>
+       <div>
+        <h3> Which one is a sport? </h3>
+        <button onclick = "wrong(this)"> Eating</button>
+        <button onclick = "right(this)"> Soccer</button>
+        <button onclick = "wrong(this)"> Reading</button>
+       </div>
+       <div>
+        <h3> True or False, dogs aren't real</h3>
+       <button onclick = "wrong(this)"> True</button>
+       <button onclick = "right(this)"> False</button>
+       </div>
+       <h2 id = "two"> My Score: 0</h2>
+    </body>
+</html>
