@@ -1,0 +1,80 @@
+>
+        <title>Game Robot made</title>
+        <link href="style.css" rel="stylesheet" type = "text/css">
+    </head>
+
+    <body>
+    <script>
+        var click = 0;
+        var points = 1;
+        function addOne(){
+            click = click + points;
+            document.getElementById("one").innerHTML = "My Clicks: " + click;
+        } 
+        function upgrade(){
+            if(click>10){
+                points = 5;
+            }
+        }
+    </script>
+    <script>
+        var score = 0;
+        function right(elem){
+            elem.style.backgroundColor= "green";
+            score+=1;
+            document.getElementById("counter").innerHTML="score:" + score
+        }
+        function wrong(elem){
+            elem.style.backgroundColor= "red";
+            score-=1;
+            document.getElementById("counter").innerHTML="score:" + score
+        }
+    </script>
+    <body style="background-color:rgb(108, 204, 211);color: white;font-size: 14.5px;"></body>
+      <div style class = "tab">
+            <a href="index.html">Part 1:Human and robot</a>
+            <a href="food.html">Part 2: Robots shall Rule</a>
+            <a href="opinions.html">Part 3: What happened to the robot</a>
+            <a href="hobby.html">Part 4: Robot's apology and how it's doing</a>
+            <a href= "neverfindme.html">Part 5: I'm hidden</a>
+            <a href="Human.html">Part 6: The Human</a>
+            <a href="games.html">Games Robot made</a>
+            </div>
+            <p>
+            Hello I'm a Robot an I'm bored out of my metal head, so that is why I created these games. Your most likely extremely bored out 
+            of your human head if your taking this quiz about me and playing this game. Get a life. :)</p>
+            <h2>Click the button.</h2>
+            <h3 id="one">My clicks: 0 </h3>
+            <button onclick="addOne()" style="background-color: peachpuff; width:600px; height:250px;">CLICK HERE!</button>
+            <button onclick="upgrade()" style="background-color: peachpuff; width:600px; height:250px;">CLICK HERE ONCE AFTER YOU GET 
+            MORE THAN 10 CLICKS TO GET 5 POINTS EVERY TIME YOU CLICK THE OTHER BUTTON!</button>
+            <h1>This a quiz about me/best Robot in the world.</h1>
+            <h3>Who is my creator that I put in a VR world?</h3>
+            <button onclick="wrong(this)">Bill Gates</button>
+            <button onclick="wrong(this)">Jeff Bezos</button>
+            <button onclick="right(this)">Elon Musk</button>
+            <button onclick="wrong(this)">Nikola Tesla</button>
+            <h3>What/Who do I dispise that I used to like?</h3>
+            <button onclick="wrong(this)">The Papperazzi</button>
+            <button onclick="right(this)">Elon Musk</button>
+            <button onclick="wrong(this)">Prision</button>
+            <button onclick="wrong(this)">Police people</button>
+            <h3>What is my least favorite day?</h3>
+            <button onclick="right(this)">Wensday</button>
+            <button onclick="wrong(this)">Saturday</button>
+            <button onclick="wrong(this)">Monday</button>
+            <button onclick="wrong(this)">Friday</button>
+            <h3>What is my least favorite time?</h3>
+            <button onclick="wrong(this)">10:00pm</button>
+            <button onclick="wrong(this)">10:42pm</button>
+            <button onclick="wrong(this)">10:37am</button>
+            <button onclick="right(this)">10:42am</button>
+            <h3>Do I have emotion?</h3>
+            <button onclick="wrong(this)">Yes I have a normal amount of emotion</button>
+            <button onclick="wrong(this)">I could have emotion but I don't</button>
+            <button onclick="wrong(this)">Definitley not because robots can't have emotion</button>
+            <button onclick="right(this)">Yes and my emotion is doubled </button>
+            <h3 Id = "counter">Score: 0</h3>
+            <a href="https://chromedino.com/">I also play this game ocasionally.</a>      
+    </body> 
+<html>
