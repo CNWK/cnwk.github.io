@@ -1,0 +1,27 @@
+body{
+    background-color: tomato;
+    color: rgb(7, 59, 3);
+    font-size: 40px;
+}
+
+.tab a:hover{
+    background-color: orange;
+}
+
+a{
+    border: 30px dotted green;
+    padding: 10px;
+    margin: 10px;
+    
+}
+
+th, td{
+    border: 5px dashed black;
+    padding: 5px;
+}
+
+button{
+    background-color: brown;
+    width: 1540px;
+    height: 900px;
+}

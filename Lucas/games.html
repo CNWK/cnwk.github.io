@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Games</title>
+        <link href="style.css" rel = "stylesheet" type = "text/css"/>
+    </head>
+    <body>
+        <div class="tab">
+            <a href="index.html">Home</a>
+            <a href="food.html">Food</a>
+            <a href="opinions.html">Opinions</a>
+            <a href = "minecraft.html">Minecraft</a>           
+        </div>
+        <script>
+            var points = 0;
+            function addOne(){
+                points = points + 1;
+                document.getElementById("one").innerHTML = "my clicks: " +points;
+            }
+        </script>
+        <button onclick="addOne()">add</button>
+        <h2 id="one">my clicks: 0</h2>
+        <script>
+            var score = 0;
+            function wrong(elem){
+                elem.style.backgroundColor = "red";
+                score--;
+                document.getElementById("two").innerHTML = "score: " + score;
+            }
+            function right(elem){
+                elem.style.backgroundColor = "green";
+                score++;
+                document.getElementById("two").innerHTML = "score: " + score;
+            }
+        </script>
+        <h3>quiz Games</h3>
+
+        <h3>What is Lucas' favorite game?</h3>
+        <button onclick="wrong(this)">plants vs zombies</button>
+        <button onclick="wrong(this)">blooket</button>
+        <button onclick="right(this)">minecraft</button>
+
+        <h3>Where is Lucas going tomorrow(July 17)?</h3>
+        <button onclick="right(this)">disneyland</button>
+        <button onclick="wrong(this)">disneyworld</button>
+        <button onclick="wrong(this)">disney cruise</button>
+
+        <h3>What is Lucas' favorite drink?</h3>
+        <button onclick="wrong(this)">milk</button>
+        <button onclick="right(this)">water</button>
+        <button onclick="wrong(this)">soda</button>
+    </body>
+</html>
