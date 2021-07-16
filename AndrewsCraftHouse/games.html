@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Game</title>
+    <link href="style.css" rel="stylesheet"type = "text/css">
+    <div class = "tab">
+        <a href="index.html">Home</a>
+        <a href="Craft.html">Crafts</a>
+        <a href="Info.html">Best supplies</a>
+        <a href="Crafts.html">More Info</a>
+        <a href="games.html">game</a>
+    </div>
+</head>
+<body>
+<script>
+    var points = 0;
+    function addOne(){
+        points = points + 1;
+        document.getElementById("one").innerHTML = "Points: " + points;
+    }
+</script>
+<button onclick="addOne()" >CLICK ME!!!</button>
+<h3 id="one">Points: 0</h3>
+<script>
+    var points = 0;
+    function wrong(elem){
+        elem.style.backgroundColor = "gray";
+        points--;
+        document.getElementById("two").innerHTML = "Points: " + points;
+    }
+    function right(elem){
+        elem.style.backgroundColor = "green";
+        points++;
+        document.getElementById("two").innerHTML = "Points: " + points;
+    }
+</script>
+<h1>.Quiz Game.</h1>
+<h4>Whats My favorite color</h4>
+<button onclick="wrong(this)">Pink</button>
+<button onclick="right(this)">Blue</button>
+<button onclick="wrong(this)">Black</button>
+<h4>Whats my favorite song</h4>
+<button onclick="right(this)">Killer Queen (By Queen)</button>
+<button onclick="wrong(this)"> Detroit Rock City (Kiss)</button>
+<button onclick="wrong(this)"> Here comes the sun (Beatles)</button>
+<h4>Whats my favorite animal</h4>
+<button onclick="wrong(this)">Panda</button>
+<button onclick="right(this)">Dog</button>
+<button onclick="wrong(this)">Cat</button>
+<h3 id="two">Points: 0</h3>
+</body>
+</html>
