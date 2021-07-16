@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Arcade</title>
+        <link href = "style.css" rel="stylesheet" type = "text/css"/>
+    </head>
+    <body>
+        <div class="tab">
+            <a href="index.html">Home</a>
+            <a href="Food.html"> Aaron's Food website</a>
+            <a href="Aaron's opinions.html">Aaron's opinions</a>
+            <a href="Sports Teams.html">Sports Teams</a>
+            <a href="Games.html">Games</a>
+        </div>
+        <script>
+            var score = 0;
+            function addOne(){
+                score = score + 1;
+                document.getElementById("one").innerHTML = "My Score: " + score;
+            }
+        </script>
+        <button onclick="addOne()">Click</button>
+        <h2 id = "one">My Score: 0 </h2>
+        <script>
+            var score = 0;
+            function wrong(elem){
+                elem.style.backgroundColor = "red";
+                score--;
+                document.getElementById("two").innerHTML = "score: " + score;
+            }
+            function right(elem){
+                elem.style.backgroundColor = "lime";
+                score++;
+                document.getElementById("two").innerHTML = "score: " + score;
+            }
+
+        </script>
+        <h2>Aaron's quiz.</h2>
+        <h3>Who was Oklahoma's quaterback in 2020?</h3>
+        <button onclick ="wrong(this)">Kyler Murray</button>
+        <button onclick="right(this)">Spencer Rattler</button>
+        <button onclick="wrong(this)">Tom Brady</button>
+        
+        <h3>Where did Aaron go on vacation in 2021?</h3>
+        <button onclick ="wrong(this)">Florida</button>
+        <button onclick="wrong(this)">Calafornia</button>
+        <button onclick="right(this)">Hawaii</button>
+
+        <h4>What is Aaron's  favorite Color?</h3>
+        <button onclick ="wrong(this)">Red</button>
+        <button onclick ="right(this)">Blue</button>
+        <button onclick ="wrong(this)">Orange</button>
+
+        <h5>What is Aaron's favorite two drinks</h5>
+        <button onclick ="wrong(this)">Club Soda,Ginger Ale</button>
+        <button onclick ="right(this)">Gatorade,Root Beer</button>
+        <button onclick ="wrong(this)">Sunkist,Water</button>
+
+        <h2 id = "two">My Score: 0 </h2>
+        
+        
+
+
+
+    </body>
+</html>
