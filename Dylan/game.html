@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Game</title>
+        <link  href="style.css" rel="stylesheet" type = "text/css"/>
+    </head>
+    <body>
+        <div class="tab">
+            <a href="index.html">Home</a>
+            <a href="food.html">Food</a>
+            <a href="Dylan's opinions.html">Dylan's opinions</a>
+            <a href="swordfishing.html">swordfishing</a>
+            <a href="game.html">games</a>
+        </div>
+        <script>
+            var points=0;   
+            function addOne(){
+                points = points+1;
+                document.getElementById("one").innerHTML= "my clicks:"+ points;
+           }
+        </script>
+        <button onclick="addOne()">click me</button>
+        <h2 id = "one">my clicks:</h2>
+        <script>
+            var score = 0;
+            function wrong(elem){
+                elem.style.backgroundColor = "red";
+                score--;
+                document.getElementById("two").innerHTML = "Score: " + score;
+            }
+            function right(elem){
+                elem.style.backgroundColor = "green";
+                score++;
+                document.getElementById("two").innerHTML = "Score: " + score;
+            }
+        </script>
+        <h2>Quiz Game</h2>
+        
+        <table>
+            <thead>
+                <tr>
+                    <td>
+                        <h3>What's my favorite color?</h3>
+                        <button onclick = "wrong(this)">Brown</button>
+                        <button onclick="right(this)">Red</button>
+                        <button onclick = "wrong(this)">Blue</button>
+                    </td>
+                    <td>
+                        <h3>A pink flamingo can only swallow when its head is upside down?</h3>
+                        <button onclick = "wrong(this)">false</button>
+                        <button onclick="right(this)">true</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h3>What's my favorite fish?</h3>
+                        <button onclick = "wrong(this)">bass</button>
+                        <button onclick = "wrong(this)">bluegill</button>
+                        <button onclick="right(this)">grinnell</button>
+                    </td>
+                    <td>
+                        <h3>What's my favorite food?</h3>
+                        <button onclick = "right(this)">burger</button>
+                        <button onclick = "wrong(this)">tuna</button>
+                        <button onclick="wrong(this)">taco</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h3>where am I going next year?</h3>
+                        <button onclick = "wrong(this)">Honolulu</button>
+                        <button onclick = "wrong(this)">India</button>
+                        <button onclick="right(this)">Yellowstone</button>
+                    </td>
+                </tr>
+            </thead>
+        </table>
+        <h2 id = "two">Score: </h2>
+    </body>
+</html>

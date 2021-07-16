@@ -1,0 +1,27 @@
+body{
+    background-color: rgb(240, 46, 12);
+    color: tomato;
+    font-size: 23px;
+}
+
+.tab a:hover{
+background-color: yellow;
+}
+
+.tab a{
+    border: 2px solid yellow;
+    padding: 3px;
+    margin: 5px;
+}
+ul, ol{
+    list-style-position: inside
+}
+th, td{
+    border: 1px double white;
+    padding: 7px;
+}
+button{
+    background-color: rgb(244, 248, 10);
+    width: 200px;
+    height: 150px;
+}

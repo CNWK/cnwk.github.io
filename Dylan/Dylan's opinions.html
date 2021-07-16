@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dylan's opinoins</title>
+        <link  href="style.css" rel="stylesheet" type = "text/css"/>
+    </head>
+    <body>
+        <div class="tab">
+            <a href="index.html">Home</a>
+            <a href="food.html">Food</a>
+            <a href="Dylan's opinions.html">Dylan's opinions</a>
+            <a href="swordfishing.html">swordfishing</a>
+            <a href="game.html">games</a>
+        </div>
+
+        <script>
+            var points=0;   
+            function addOne(){
+                points = points+1;
+                document.getElementById("one").innerHTML= "my clicks:"+ points;
+           }
+        </script>
+        <button onclick="addOne()">click me</button>
+        <h2 id = "one">my clicks:</h2>
+
+        <h6> these are my preferences</h6>
+        <table>
+            <thead>
+                <tr>
+                    <th>category</th>
+                    <th>likes</th>
+                    <th>dislikes</th>
+                </tr>
+                <tr>
+                    <th>Fish</th>
+                    <td>Gulf Snapper, Redfish</td>
+                    <td>Oysters</td>
+                </tr>
+                <tr>
+                    <th>Pizza Places</th>
+                    <td>Domino's, Brother's</td>
+                    <td>pizza hut</td>
+                </tr>
+                <tr>
+                    <th>sports</th>
+                    <td>soccer,fishing,football</td>
+                    <td>baseball</td>
+                </tr>
+                <tr>
+                    <th>pictures</th>
+                    <td><img width=450px src="https://www.hawkscay.com/resources/media/user/1588106545-Swordfish_Header_1920x800_desktop.jpg" alt="this is a picture of a swordfish"></td>
+                    <td><img width=450px src="https://thestayathomechef.com/wp-content/uploads/2020/04/Grilled-Chicken-2-scaled.jpg"></td>
+                </tr>
+            </thead>
+        </table>
+    </body>
+</html>
