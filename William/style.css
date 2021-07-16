@@ -1,0 +1,38 @@
+body{
+     background-color: rgb(28, 30, 32);
+     color: firebrick;
+     text-align: center;
+}
+
+.tab a:hover{
+      background-color: honeydew;
+}
+
+a{
+    border: 5px solid black;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 8px;
+}
+ul,ol{
+list-style-position: inside;
+}
+
+th, td{
+    border: 3px dashed black;
+    padding: 7px;
+}
+table{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.egg{
+    color: yellow;
+}
+
+button{
+    background-color: slateblue;
+    width:  200px;
+    height: 300px; 
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+        <head>
+            <title>Game</title>
+            <link href = "style.css" rel = "stylesheet" type = "text/css">
+        </head>
+        <body>
+            <div class= "tab">
+                <a href = "index.html">home</a>
+                <a href=" Food.html">Food</a>
+                <a href = "opinions.html">Preference</a>
+                <a href = "makeyourownwebsite.html">Egg</a>
+            </div>
+            <script>
+                var points= 0;
+                function addone(){
+                    points+=1000000000000000000000000000000000000000000000000;
+                    document.getElementById("one").innerHTML = "My Clicks: " + points;
+                }
+            </script>
+            <button onclick="addone()">click me papi</button> 
+            <h1 id="one">you have 0 points keep clicking me papi</h1>
+            <script>
+                var score = 0;
+                function wrong(elem){
+                    elem.style.backgroundColor = "red";
+                    score-=1;
+                    document.getElementById("two").innerHTML = "score: " + score;
+                }
+                function right(elem){
+                    elem.style.backgroundColor = "green";
+                    score+=1;
+                    document.getElementById("two").innerHTML = "score: " + score;
+                }
+            </script>
+            <h2>good anime</h2>
+            <h3>which character is the Best Waifu</h3>
+            <button onclick = "wrong(this)">Robin (one piece)</button>
+            <button onclick = "right(this)">Speedwagon</button>
+            <button onclick = "wrong(this)">Rias Gremory</button>
+            
+            <h3>which character is the strongest </h3>
+            <button onclick = "wrong(this)">Naruto</button>
+            <button onclick = "right(this)">One Punch Man</button>
+            <button onclick = "wrong(this)">Goku</button>
+
+            <h4>which character solos your favorite verse </h4>
+            <button onclick = "wrong(this)">Naruto</button>
+            <button onclick = "right(this)">One Punch Man</button>
+            <button onclick = "wrong(this)">Goku</button>
+
+            <h1 id="two">Score:0</h1>
+        </body>
+</html>
